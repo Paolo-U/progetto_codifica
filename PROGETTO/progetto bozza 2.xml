@@ -5,43 +5,46 @@
 
     <teiHeader>
         <fileDesc> 
-            
             <titleStmt>
                 <title>Corpus composto da tre articoli, due entrate bibliografiche e notizie della rivista La Rassegna Settimanale</title>
+                <respStmt>
+                    <resp>Responsabili della codifica in XML TEI P5 per il progetto d'esame di Codifica di Testi:</resp>
+                    <resp>Professore coordinatore del progetto d'esame:</resp>
+
+                    <persName><forename>Milena</forename><surname>Panetta</surname></persName>
+                    <persName><forename>Paolo</forename><surname>Ulivelli</surname></persName>
+                    <persName>
+                        <forename>Angelo</forename>
+                        <forename>Mario</forename>
+                        <surname>Del Grosso</surname>
+                    </persName>
+                </respStmt>
             </titleStmt>
 
             <editionStmt>
                 <edition>Edizione digitale de La Rassegna Settimanale</edition>
             </editionStmt>
 
-            <respStmt>
-                <resp>Responsabili della codifica in XML TEI P5 per il progetto d'esame di Codifica di Testi:</resp>
-                    <persName><forename>Milena</forename><surname>Panetta</surname></persName>
-                    <persName><forename>Paolo</forename><surname>Ulivelli</surname></persName>
-
-                <resp>Professore coordinatore del progetto d'esame:</resp>
-                    <persName>
-                        <forename>Angelo</forename>
-                        <forename>Mario</forename>
-                        <surname>Del Grosso</surname>
-                    </persName>
-            </respStmt>
-
-            
             <publicationStmt>
                 <publisher>Università di Pisa</publisher>
-                        <pubPlace>Pisa</pubPlace>
-                        <date when="2025">2025</date>
-                        <availability status="free">
-                            <p>I testi digitalizzati sono disponibili gratuitamente</p>
-                        </availability>
+                <pubPlace>Pisa</pubPlace>
+                <date when="2025">2025</date>
+                <availability status="free">
+                    <p>I testi digitalizzati sono disponibili gratuitamente</p>
+                </availability>
             </publicationStmt>
-            
-            <sourceDesc> <!-- VERSIONE CARTACEA ORIGINALE-->
+
+            <sourceDesc>
                 <biblStruct>
                     <monogr>
                         <title level="j">La Rassegna Settimanale</title>
                         <title type="sub">di politica, scienze, lettere ed arti</title>
+                        <editor role="proprietario direttore">
+                            <persName><forename>Leopoldo</forename> <surname>Franchetti</surname></persName>
+                        </editor>
+                        <editor role="proprietario direttore">
+                            <persName><forename>Sideny</forename> <surname>Sonnino</surname></persName>
+                        </editor>
                         <imprint>
                             <publisher>Casa Editrice Barbèra</publisher>
                             <pubPlace>Firenze</pubPlace>
@@ -49,12 +52,11 @@
                         </imprint>
                     </monogr>
 
-                    <editor role="proprietario direttore"><persName><forename>Leopoldo</forename> <surname>Franchetti</surname></persName></editor>
-                    <editor role="proprietario direttore"><persName><forename>Sideny</forename> <surname>Sonnino</surname></persName></editor>
                     <note>Pubblicazione cartacea</note>
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
+
 
         <encodingDesc> <!-- DESCRIZIONE DEL LAVORO DI CODIFICA-->
             <projectDesc>
@@ -123,10 +125,13 @@
 
                 <ab>
                     <event xml:id="crisi_16_maggio" type="political">
-                        <date when="1877-05-16">16 maggio</date>
-                        <desc>Il 16 maggio 1877 si verificò una crisi istituzionale della Terza Repubblica francese: il presidente Mac Mahon tentò un colpo di mano sostituendo il governo repubblicano con ministri conservatori, ma fallì; il Parlamento consolidò temporaneamente la Repubblica.</desc>
+                        <desc>
+                            <date when="1877-05-16">16 maggio</date>
+                            Il 16 maggio 1877 si verificò una crisi istituzionale della Terza Repubblica francese: il presidente Mac Mahon tentò un colpo di mano sostituendo il governo repubblicano con ministri conservatori, ma fallì; il Parlamento consolidò temporaneamente la Repubblica.
+                        </desc>
                     </event>
                 </ab>
+
             </fileDesc>
 
         </teiHeader>
