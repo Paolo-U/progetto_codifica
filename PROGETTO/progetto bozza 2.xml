@@ -1539,19 +1539,32 @@
 
             </body>
             <back>
-                <div type="signatures">
-                    <signed>
-                        <persName><hi rend="smallcaps"><forename>SIDNEY</forename><surname>SONNINO</surname></hi>, <roleName>Direttore proprietario</roleName></persName>
-                    </signed>
-                    <signed>
-                        <persName><hi rend="smallcaps"><forename>PIETRO</forename><surname>PAMPALONI</surname></hi>, <roleName>Gerente responsabile</roleName></persName>
-                    </signed>
+            <div type="signatures">
+                <signed>
+                    <persName>
+                        <hi rend="smallcaps"><forename>SIDNEY</forename><surname>SONNINO</surname></hi>, 
+                        <roleName>Direttore proprietario</roleName>
+                    </persName>
+                </signed>
+                <signed>
+                    <persName>
+                        <hi rend="smallcaps"><forename>PIETRO</forename><surname>PAMPALONI</surname></hi>, 
+                        <roleName>Gerente responsabile</roleName>
+                    </persName>
+                </signed>
+            </div>
 
-                    <pubPlace><placeName><settlement type="city"><hi rend="smallcaps">ROMA</hi></settlement></placeName></pubPlace>
-                    <date when="1882">1882</date>
-                    <orgName type="publisher">Tipografia Forzani o C.</orgName>
-                </div>
-            </back>
+            <ab>
+                <pubPlace>
+                    <placeName>
+                        <settlement type="city"><hi rend="smallcaps">ROMA</hi></settlement>
+                    </placeName>
+                </pubPlace>
+                <date when="1882">1882</date>
+                <orgName type="publisher">Tipografia Forzani o C.</orgName>
+            </ab>
+        </back>
+
         </text>
 
     </TEI> 
