@@ -97,44 +97,84 @@
     <!--ART 1: Volume 3, Fascicolo 65 Corrispondenza da Parigi-->
     <TEI>
         <teiHeader>
-            <fileDesc> <!-- descrizione bibliografica del documento -->
+             <!--   <fileDesc> 
 
-                <titleStmt>
-                    <title>Corrispondenza da Parigi</title>
-                </titleStmt>
+                    <titleStmt>
+                        <title>Corrispondenza da Parigi</title>
+                    </titleStmt>
 
-                <publicationStmt>
-                    <publisher>Università di Pisa</publisher>
-                    <date when="2025">2025</date>
-                    <availability status="free">
-                        <p>Dominio pubblico</p>
-                    </availability>
-                    <pubPlace>Pisa</pubPlace>
-                </publicationStmt>
+                    <publicationStmt>
+                        <publisher>Università di Pisa</publisher>
+                        <date when="2025">2025</date>
+                        <availability status="free">
+                            <p>Dominio pubblico</p>
+                        </availability>
+                        <pubPlace>Pisa</pubPlace>
+                    </publicationStmt>
 
-                <sourceDesc>
-                    <bibl>
-                        <title level="j"> La Rassegna Settimanale</title>
-                        <title type="sub">di politica, scienze, lettere ed arti</title>
-                        <date when="1879">1879</date>
-                        <biblScope unit="volume">3</biblScope>
-                        <biblScope unit="issue">65</biblScope>
-                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-65-volume-3-1879-semestre-1-trimestre-1/"></edition>
-                    </bibl>
-                </sourceDesc>
+                    <sourceDesc>
+                        <bibl>
+                            <title level="j"> La Rassegna Settimanale</title>
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                            <date when="1879">1879</date>
+                            <biblScope unit="volume">3</biblScope>
+                            <biblScope unit="issue">65</biblScope>
+                            <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-65-volume-3-1879-semestre-1-trimestre-1/"></edition>
+                        </bibl>
+                    </sourceDesc>
 
-                <ab>
-                    <event xml:id="crisi_16_maggio" type="political">
+                    <ab xml:id="crisi_16_maggio">
                         <desc>
                             <date when="1877-05-16">16 maggio</date>
-                            Il 16 maggio 1877 si verificò una crisi istituzionale della Terza Repubblica francese: il presidente Mac Mahon tentò un colpo di mano sostituendo il governo repubblicano con ministri conservatori, ma fallì; il Parlamento consolidò temporaneamente la Repubblica.
+                            Il 16 maggio 1877 si verificò una crisi istituzionale della Terza Repubblica francese: 
+                            il presidente Mac Mahon tentò un colpo di mano sostituendo il governo repubblicano 
+                            con ministri conservatori, ma fallì; il Parlamento consolidò temporaneamente la Repubblica.
                         </desc>
-                    </event>
-                </ab>
+                    </ab>
 
-            </fileDesc>
+                </fileDesc> -->
+                
+                <fileDesc> <!-- descrizione bibliografica del documento -->
 
+                    <titleStmt>
+                        <title>Corrispondenza da Parigi</title>
+                    </titleStmt>
+
+                    <publicationStmt>
+                        <publisher>Università di Pisa</publisher>
+                        <date when="2025">2025</date>
+                        <availability status="free">
+                            <p>Dominio pubblico</p>
+                        </availability>
+                        <pubPlace>Pisa</pubPlace>
+                    </publicationStmt>
+
+                    <sourceDesc>
+                        <bibl>
+                            <title level="j">La Rassegna Settimanale</title>
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                            <date when="1879">1879</date>
+                            <biblScope unit="volume">3</biblScope>
+                            <biblScope unit="issue">65</biblScope>
+                            <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-65-volume-3-1879-semestre-1-trimestre-1/"></edition>
+                        </bibl>
+                    </sourceDesc>
+
+                </fileDesc>
+ 
         </teiHeader>
+            <text>
+                     <body>
+                        <ab xml:id="crisi_16_maggio">
+                            <desc>
+                                <date when="1877-05-16">16 maggio</date>
+                                Il 16 maggio 1877 si verificò una crisi istituzionale della Terza Repubblica francese: 
+                                il presidente Mac Mahon tentò un colpo di mano sostituendo il governo repubblicano 
+                                con ministri conservatori, ma fallì; il Parlamento consolidò temporaneamente la Repubblica.
+                            </desc>
+                        </ab>
+                    </body>
+          </text>  
 
         
         <facsimile>
@@ -148,11 +188,12 @@
 
         <text>
             <body>
+              <div type="lettera">
                 <pb n="1" facs="#CorrispondenzaDaParigi_pag1"/>
                 <cb n="1"/>
 
-                    <head type="title"><hi rend="smallcaps">CORRISPONDENZA DA <placeName><settlement type="town">PARIGI</settlement></placeName></hi></head><lb/>
-                    <space dim="horizontal"/><date>24 marzo</date><lb/>
+                    <head type="title"><hi rend="smallcaps">CORRISPONDENZA DA <placeName><settlement type="town">PARIGI</settlement></placeName></hi></head>
+                     <p><date>24 marzo</date></p>
 
                 <p>
                     <space dim="horizontal" extent="0,5cm"/> <q type="proverb">« Non basta vincere, bisogna anche saper profittare della <lb/>
@@ -233,7 +274,7 @@
                     sultate notabilità militari, sono state prese disposizioni in <lb/>
                     vista di un colpo di Stato; ma sia che mancassero di ri- <lb break="no"/> 
                     solutezza o che non credessero di poter contare sull’eser- <lb break="no"/> 
-                    cito, hanno dato indietro e il <event corresp="#crisi_16_maggio">colpo di Stato</event> è andato a <lb/>
+                    cito, hanno dato indietro e il <eventName corresp="#crisi_16_maggio">colpo di Stato</eventName> è andato a <lb/>
                     vuoto. Tutto ciò è senza dubbio da condannarsi, ma in <lb/>
                     politica bisogna sapersi contentare di vincere e non oppri- <lb break="no"/> 
                     mere gli avversari. Il governo quindi ha fatto bene di respin- <lb break="no"/> 
@@ -382,7 +423,7 @@
                     spirito ; bisogna credere che quel regno sia più facile a <lb/>
                     custodire che le <orgName>repubbliche della terra</orgName>.
                 </p>
-
+             </div>
             </body>
         </text>
     </TEI>
@@ -434,8 +475,8 @@
                 <pb n="1" facs="#LettereMilitari_pag1"/>
                 <cb n="1"/>
 
-                <space dim="horizontal" extent="5cm"/><title><hi rend="smallcaps">LETTERE MILITARI</hi></title><space dim="horizontal" extent="5cm"/> <lb/>
-                <space dim="horizontal" extent="6cm"/><title type="sub"><hi rend="smallcaps">LE NECESSITà MILITARI</hi></title><space dim="horizontal" extent="6cm"/><lb/>
+                <p><space dim="horizontal" extent="5cm"/><title><hi rend="smallcaps">LETTERE MILITARI</hi></title><space dim="horizontal" extent="5cm"/> <lb/>
+                <space dim="horizontal" extent="6cm"/><title type="sub"><hi rend="smallcaps">LE NECESSITà MILITARI</hi></title><space dim="horizontal" extent="6cm"/><lb/></p>
 
                 <p>
                     <space dim="horizontal" extent="0,5cm"/> Non fa d’uopo possedere acuta la vista degli occhi e <lb/>
@@ -844,13 +885,26 @@
                 <pb n="1" facs="#DonLicciuPapa_pag1"/>
                 <cb n="1"/>
 
-                <space dim="horizontal"/><head type="title"><hi rend="smallcaps"><persName type="fictional"><addName>DON</addName> <forename>LICCIU</forename> <surname>PAPA.</surname></persName></hi></head><space dim="horizontal"/><lb/>
+                <space dim="horizontal"/>
+                <head type="title">
+                    <hi rend="smallcaps">
+                        <persName type="fictional">
+                            <addName>DON</addName> <forename>LICCIU</forename> <surname>PAPA.</surname>
+                        </persName>
+                    </hi>
+                </head>
+                <space dim="horizontal"/>
+                <lb/>
+
+              <div> 
 
                 <p>
-                    <space dim="horizontal" extent="0,5cm"/>Le comari filavano al sole, e le galline razzolavano nel <lb/>
+                    <space dim="horizontal" extent="0,5cm"/>
+                    Le comari filavano al sole, e le galline razzolavano nel <lb/>
                     pattume, davanti agli usci, allorché successe un gridio, un <lb/>
                     fuggi fuggi per tutta la stradicciuola, che si vide comparire <lb/>
-                    da lontano lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename>, l’<roleName>acchiappaporci</roleName></persName>, col laccio in mano ; <lb/>
+                    da lontano lo <persName type="fictional" key="zio Masi">
+                        <addName>zio</addName> <forename>Masi</forename>, l’<roleName>acchiappaporci</roleName></persName>, col laccio in mano ; <lb/>
                     e il pollame scappava schiamazzando, come se lo cono- <lb break="no"/>
                     scesse. <lb/>
                 </p>
@@ -1190,9 +1244,10 @@
                     <forename>Arcangelo</forename></persName>, con un balcone e due finestre verdi. <lb/>
                 </p>
 
-                <p>
-                    <space dim="horizontal" extent="5cm"/><author><hi rend="smallcaps">G. VERGA</hi></author>   
-                </p>
+                <p><space dim="horizontal" extent="5cm"/></p>
+                
+                <author><hi rend="smallcaps">G. VERGA</hi></author>
+              </div>
 
             </body>
         </text>
@@ -1237,9 +1292,10 @@
         </teiHeader>
 
         <facsimile>
-            <surface n="1" xml:id="L'Acqua_pag1">
-                <graphic url="img/bibl1_L'Acqua_pag1"/>
-            </surface>
+           <surface n="1" xml:id="L_Acqua_pag1">
+            <graphic url="img/bibl1_L_Acqua_pag1"/>
+        </surface>
+
         </facsimile>
 
         <text>
@@ -1249,9 +1305,10 @@
                 <cb n="1"/>
 
                 <p>
-                <author><hi rend="smallcaps"><persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName></hi></author>. <title><hi rend="italic">L'Acqua</hi> - Polimetro</title>  — <pubPlace>Torino</pubPlace>, <publisher>Camilla <lb/>
-                e Bertolero </publisher>, <date>1878</date>.
+                    <hi rend="smallcaps"><persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName></hi>. 
+                    <hi rend="italic">L'Acqua</hi> - Polimetro — Torino, Camilla e Bertolero, 1878.
                 </p>
+               
 
                 <p>
                     Dal <date>1833</date>, che diede la prima <orgName>Accademia</orgName> di poesia estem- <lb break="no"/> 
@@ -1414,10 +1471,12 @@
             <body>
                 <pb n="1" facs="#LaPsycologieAllemandeContemporaine_pag1"/>
                 <p>
-                <title><hi rend="smallcaps">Scienze filosofiche.</hi></title>
-                <author><hi rend="smallcaps"><persName><forename><abbr>Th.</abbr><expan>Théodule</expan></forename> <surname>Ribot.</surname></persName></hi></author> <title><hi rend="italic">La Psycologie Allemande Contemporaine</hi> (école <lb/>
-                expérimentale).</title> — <pubPlace>Paris</pubPlace> <publisher><persName><forename><abbr>G.</abbr></forename> <surname>Baillière</surname></persName></publisher>, <date>1879</date>. <lb/>
+                    <hi rend="smallcaps">Scienze filosofiche.</hi> 
+                    <hi rend="smallcaps"><persName><forename><abbr>Th.</abbr><expan>Théodule</expan></forename> <surname>Ribot.</surname></persName></hi> 
+                    <hi rend="italic">La Psycologie Allemande Contemporaine</hi> (école expérimentale) — Paris, 
+                    <persName><forename><abbr>G.</abbr></forename> <surname>Baillière</surname></persName>, 1879.
                 </p>
+
 
                 <p>
                 Dedicarsi per vari anni allo studio dei psicologi tede- <lb break="no"/> 
@@ -1488,61 +1547,63 @@
 
         <text>
             <pb n="1" facs="#notizie_pag1"/>
-            <front> <!--frontespizio testo composito-->
-                <title><hi rend="smallcaps">NOTIZIE</hi></title>
-            </front>
+             <front>
+                <titlePage>
+                    <docTitle>
+                        <titlePart><hi rend="smallcaps">NOTIZIE</hi></titlePart>
+                    </docTitle>
+                </titlePage>
+              </front>
+
+
 
             <body>
                 <group>
-                    
-                    <p>
-                        <space dim="horizontal" extent="0,5cm"/><orgName type="publisher" key="Loescher">L’editore Loescher</orgName> annunzia la prossima pubblicazione della versione <lb/>
-                        italiana dell'opera di Ferdinando Gregorovius, intitolata <title><hi rend="italic">Menaide storia <lb/>
-                        di una imperatrice Bizantina</hi></title>.<lb/>
-                    </p>
-                    
+                    <text>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm"/>
+                                <orgName type="publisher" key="Loescher">L’editore Loescher</orgName> annunzia la prossima pubblicazione della versione <lb/>
+                                italiana dell'opera di Ferdinando Gregorovius, intitolata <title><hi rend="italic">Menaide storia <lb/>
+                                di una imperatrice Bizantina</hi></title>.<lb/>
+                            </p>
 
-                    
-                    <p>
-                        <space dim="horizontal" extent="0,5cm"/>A <placeName><settlement type="town">Halle</settlement></placeName>, la libreria <orgName type="publisher">Max Nienmyer</orgName> sta per pubblicare sotto la dire- <lb break="no"/> 
-                        zione del <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Hermann</surname> <forename>Paul</forename>, <roleName>professore</roleName></persName> all' <orgName>Università di <placeName><settlement type="town">Friburg</settlement></placeName></orgName>, una  <lb/>
-                        collezione dei più importami monumenti della letteratura del medio evo. <lb/>
-                        col titolo <title level="s"><hi rend="italic">Mdeutsche Bibliothek</hi></title>. L'<orgName type="publisher">editore</orgName> ha il proposito di rendere ac- <lb break="no"/> 
-                        cessibili a tutti opere delle quali finora si fecero costosissime edizioni. I  <lb/>
-                        testi saranno riveduti; ogni volume avrà una breve prefazione sul valore <lb/>
-                        letterario dell’opera, sul testo e sul metodo critico eguito dall'editore <lb/>
-                    </p>
-                    
+                            <p>
+                                <space dim="horizontal" extent="0,5cm"/>
+                                A <placeName><settlement type="town">Halle</settlement></placeName>, la libreria <orgName type="publisher">Max Nienmyer</orgName> sta per pubblicare sotto la dire- <lb break="no"/> 
+                                zione del <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Hermann</surname> <forename>Paul</forename>, <roleName>professore</roleName></persName> all' <orgName>Università di <placeName><settlement type="town">Friburg</settlement></placeName></orgName>, una  <lb/>
+                                collezione dei più importami monumenti della letteratura del medio evo. <lb/>
+                                col titolo <title level="s"><hi rend="italic">Mdeutsche Bibliothek</hi></title>. L'<orgName type="publisher">editore</orgName> ha il proposito di rendere ac- <lb break="no"/> 
+                                cessibili a tutti opere delle quali finora si fecero costosissime edizioni. I  <lb/>
+                                testi saranno riveduti; ogni volume avrà una breve prefazione sul valore <lb/>
+                                letterario dell’opera, sul testo e sul metodo critico eguito dall'editore <lb/>
+                            </p>
 
-                    
-                    <p>
-                        <space dim="horizontal" extent="0,5cm"/>Il <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname> Janitschek</surname></persName>, <roleName>professore</roleName> all’<orgName>Università di <placeName><settlement type="town">Praga</settlement></placeName></orgName> pubblicherà fra <lb/>
-                        breve uu lavoro su <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
-                    </p>
-                    
+                            <p>
+                                <space dim="horizontal" extent="0,5cm"/>
+                                Il <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname> Janitschek</surname></persName>, <roleName>professore</roleName> all’<orgName>Università di <placeName><settlement type="town">Praga</settlement></placeName></orgName> pubblicherà fra <lb/>
+                                breve un lavoro su <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
+                            </p>
 
-                    
-                    <p>
-                        <space dim="horizontal" extent="0,5cm"/>Da una comunicazione fatta ultimamente alla <orgName>Società inglese di ar- <lb break="no"/> 
-                        cheologia biblica</orgName> risulterebbe una fondata speranza di scoprire in <placeName><region>Cappa- <lb break="no"/> 
-                        docia</region></placeName> una biblioteca cuneiforme su tavolette di argilla, analoga a quelle <lb/> 
-                        che sono state trovate in <placeName><region>Assiria</region></placeName> e in <placeName><region>Babilonia</region></placeName>. Le tavolette già rinve- <lb break="no"/> 
-                        nute farebbero credere che la lingua adoperatavi fosse assai diversa dai <lb/>
-                        cuneiformi finora conosciuti. <lb/>
-                    </p>
-                    
+                            <p>
+                                <space dim="horizontal" extent="0,5cm"/>
+                                Da una comunicazione fatta ultimamente alla <orgName>Società inglese di ar- <lb break="no"/> 
+                                cheologia biblica</orgName> risulterebbe una fondata speranza di scoprire in <placeName><region>Cappa- <lb break="no"/> 
+                                docia</region></placeName> una biblioteca cuneiforme su tavolette di argilla, analoga a quelle <lb/> 
+                                che sono state trovate in <placeName><region>Assiria</region></placeName> e in <placeName><region>Babilonia</region></placeName>. Le tavolette già rinve- <lb break="no"/> 
+                                nute farebbero credere che la lingua adoperatavi fosse assai diversa dai <lb/>
+                                cuneiformi finora conosciuti. <lb/>
+                            </p>
 
-                    
-                    <p>
-                        <space dim="horizontal" extent="0,5cm"/>In <placeName><country>Francia</country></placeName> si discute il disegno di stabilire un servizio regolare di <lb/> 
-                        carovane fra la <placeName><country>Tunisia</country></placeName> e l’interno dell'<placeName><country>Africa</country></placeName>. La linea passerebbe per <lb/> 
-                        il <placeName><region>Bonin</region></placeName>, il <placeName><region>Wadai</region></placeName> e il <placeName><region>Darfur</region></placeName>.
-                    </p>
-                    
-        
+                            <p>
+                                <space dim="horizontal" extent="0,5cm"/>
+                                In <placeName><country>Francia</country></placeName> si discute il disegno di stabilire un servizio regolare di <lb/> 
+                                carovane fra la <placeName><country>Tunisia</country></placeName> e l’interno dell'<placeName><country>Africa</country></placeName>. La linea passerebbe per <lb/> 
+                                il <placeName><region>Bonin</region></placeName>, il <placeName><region>Wadai</region></placeName> e il <placeName><region>Darfur</region></placeName>.
+                            </p>
+                    </text>
                 </group>
-
             </body>
+
             <back>
             <div type="signatures">
                 <signed>
@@ -1558,16 +1619,28 @@
                     </persName>
                 </signed>
             </div>
+         <bibl>
 
-            <ab>
-                <pubPlace>
-                    <placeName>
-                        <settlement type="city"><hi rend="smallcaps">ROMA</hi></settlement>
-                    </placeName>
-                </pubPlace>
-                <date when="1882">1882</date>
-                <orgName type="publisher">Tipografia Forzani o C.</orgName>
-            </ab>
+            <bibl>
+                
+                <persName>
+                    <forename>Ferdinando</forename>
+                    <surname>Gregorovius</surname>
+                </persName>
+                <imprint>
+                    <pubPlace>
+                        <placeName>
+                            <settlement type="city"><hi rend="smallcaps">ROMA</hi></settlement>
+                        </placeName>
+                    </pubPlace>
+                    <date when="1882">1882</date>
+                    <publisher>Tipografia Forzani o C.</publisher>
+                </imprint>
+            </bibl>
+
+
+        </bibl>
+
         </back>
 
         </text>
