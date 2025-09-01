@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" version="4.0.1" xml:lang="it">
+
+    <teiHeader>
+        <fileDesc> 
+            
+            <titleStmt>
+                <p>corpus composto da tre articoli, due entrate bibliografiche e notizie della rivista <title level="j">La Rassegna Settimanale</title></p>
+            </titleStmt>
+
+            <editionStmt>
+                <edition>Edizione digitale de La Rassegna Settimanale</edition>
+            </editionStmt>
+
+            <respStmt>
+                    <resp>Responsabili della codifica in XML TEI P5 per il progetto d'esame di Codifica di Testi:</resp>
+                    <persName><forename>Milena</forename> <surname>Panetta</surname></persName>
+                    <persName><forename>Paolo</forename> <surname>Ulivelli</surname></persName>
+                    
+                    <resp>Professore coordinatore del progetto d'esame:</resp>
+                        <persName>
+                            <forename>Angelo </forename>
+                            <forename>Mario </forename>
+                            <surname>Del Grosso</surname>
+                        </persName>
+            </respStmt>
+            
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                        <pubPlace>Pisa</pubPlace>
+                        <date when="2025">2025</date>
+                        <availability status="free">
+                            <p>I testi digitalizzati sono disponibili gratuitamente</p>
+                        </availability>
+            </publicationStmt>
+            
+            <sourceDesc> <!-- VERSIONE CARTACEA ORIGINALE-->
+                <bibl>
+                    <title level="j">La Rassegna Settimanale</title>
+                    <subtitle>di politica, scienze, lettere ed arti</subtitle>
+                    <date from="1878" to="1882">dal 1878 al 1882</date>
+
+                    <publisher>Casa Editrice Barbèra</publisher>
+                    <pubPlace>Firenze</pubPlace>
+                    <editor role="proprietario direttore">Leopoldo Franchetti</editor>
+                    <editor role="proprietario direttore">Sidney Sonnino</editor>
+                    <note>Pubblicazione cartacea</note>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc> <!-- DESCRIZIONE DEL LAVORO DI CODIFICA-->
+            <p>Le parti del documento originale sono state trascritte seguento gli standard TEI P5.</p>
+            <p>I testi scelti per la codifica sono:</p>
+            <list>
+                <head>Articoli</head>
+                <item>Volume 3, Fascicolo 65 Corrispondenza da Parigi</item>
+                <item>Volume 9, Fascicolo 212 Don Licciu Papa</item>
+                <item>Volume 9, Fascicolo 212 Lettere militari, le necessità militari</item>
+            </list>
+
+            <list>
+                <head>Bibliografia</head>
+                <item>Volume 3, Fascicolo 65 Giuseppe Regaldi L'Acqua - Polimetro</item>
+                <item>Volume 3, Fascicolo 65 Th. Ribot. La Psycologie Allemande Contemporaine (école expérimentale)</item>
+            </list>
+            
+            <list>
+                <head>Notizie</head>
+                <item>Volume 9, Fascicolo 211 - tutte le notizie presenti</item>
+            </list>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date when="1878">1878</date> 
+            </creation>
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+    <!--ART 1: Volume 3, Fascicolo 65 Corrispondenza da Parigi-->
+    <TEI>
+        <teiHeader>
+            <fileDesc> <!-- descrizione bibliografica del documento -->
+
+                <titleStmt>
+                    <title>Corrispondenza da Parigi</title>
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>Università di Pisa</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title level="j"> La Rassegna Settimanale</title>
+                        <title><subtitle>di politica, scienze, lettere ed arti</subtitle></title>
+                        <date when="1879">1879</date>
+                        <biblScope unit="volume">3</biblScope>
+                        <biblScope unit="issue">65</biblScope>
+                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-65-volume-3-1879-semestre-1-trimestre-1/"></edition>
+                    </bibl>
+                </sourceDesc>
+            
+                <listEvent>
+                    <event xml:id="crisi_16_maggio" type="political">
+                        <date when="1877-05-16">16 maggio</date>
+                        <desc>Il 16 maggio 1877 si verificò una crisi istituzionale della Terza Repubblica francese: il presidente Mac Mahon tentò un colpo di mano sostituendo il governo repubblicano con ministri conservatori, ma fallì; il Parlamento consolidò temporaneamente la Repubblica.</desc>
+                    </event>
+                </listEvent>
+
+            </fileDesc>
+
+        </teiHeader>
+
+        
+        <facsimile>
+            <surface n="1" xml:id="CorrispondenzeDaParigi_pag1">
+                <graphic url="img/CorrispondenzeDaParigi_pag1"/>
+            </surface>
+            <surface n="2" xml:id="CorrispondenzeDaParigi_pag2">
+                <graphic url="img/CorrispondenzeDaParigi_pag2"/>
+            </surface>
+        </facsimile>
+
+        <text>
+            <body>
+                <pb n="1" facs="#CorrispondenzaDaParigi_pag1"/>
+                <cb n="1"/>
+
+                    <head type="title"><hi rend="smallcaps">CORRISPONDENZA DA <placeName><settlement type="town">PARIGI</settlement></placeName></hi></head><lb/>
+                    <space dim="horizontal"/><date>24 marzo</date><lb/>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/> <q type="proverb">« Non basta vincere, bisogna anche saper profittare della <lb/>
+                    vittoria. »</q> Giammai la verità di questo adagio mi è sembrata <lb/>
+                    più manifesta: la <orgName>repubblica</orgName> ha riportata una splendida vit- <lb break="no"/> 
+                    toria sui suoi avversari del <date corresp="#crisi_16_maggio">16 maggio<date> collegati ; essa si ap- <lb break="no"/> 
+                    poggia sul consentimento dell’immensa maggioranza del <lb/>
+                    paese, e tuttavia il suo avvenire sembra più incerto oggi di <lb/>
+                    quello che non fosse nel momento in cui lottava contro la lega <lb/>
+                    reazionaria. Le menti moderate erano allora dal lato suo e il <lb/>
+                    grosso dell’opinione conservatrice, lungi dal seguire il <persName key="Albert de Broglie"><surname>Bro- <lb break="no"/> 
+                    glie</surname></persName> e il <persName key="Oscar Bardi de Fourtou"><surname>Fourtou</surname></persName>, considerava il gabinetto del <date corresp="#crisi_16_maggio">16 maggio</date> <lb/>
+                    come una specie di <orgName>ministero <persName key="Jules de Polignac"><surname>Polignac</surname></persName></orgName>. In questo momento <lb/>
+                    invece questa moltitudine alquanto indifferente in politica <lb/>
+                    ma che, alla lunga, esercita una influenza preponderante <lb/>
+                    sull’andamento degli affari e sul destino dei governi facen- <lb break="no"/> 
+                    do pendere da una parte o dall’altra il peso enorme degl’in- <lb break="no"/> 
+                    teressi che rappresenta, questa moltitudine conservatrice, <lb/>
+                    dico, ma piuttosto indifferente quanto alla forma del go- <lb break="no"/> 
+                    verno, si volge poco a poco contro la repubblica. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Quelli stessi che applaudivano all’abortire del tentativo <lb/>
+                    reazionario del <date corresp="#crisi_16_maggio">16 maggio</date> e che lasciavano partire senza 
+                    rimpiangerlo il <persName key="Patrice de Mac Mahon"><roleName>maresciallo</roleName> <surname>Mac Mahon</surname></persName>, cominciano a ripe- <lb break="no"/> 
+                    tere con compiacenza quella trita sentenza : che la repub- <lb break="no"/> 
+                </p>
+
+                <cb n="2"/>
+                <p>
+                    blica è positivamente incompatibile col temperamento fran- <lb break="no"/> 
+                    cese; altri, di umore più cupo, prevedono già il ristabilimento <lb/>
+                    della <orgName>Comune</orgName>, seguito in breve da una restaurazione impe- <lb break="no"/> 
+                    riale o altra. Questo voltafaccia graduale dell’opinione della <lb/>
+                    gente che non ha opinione ben determinata è un fatto im- <lb break="no"/> 
+                    portante, perchè quando la repubblica non sarà più soste- <lb break="no"/> 
+                    nuta che dal <orgName>partito repubblicano</orgName>, sarà molto malata ! <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Ora chi devesi accusare di questo voltafaccia? L’inco- <lb break="no"/> 
+                    stanza del temperamento francese e il suo gusto eccessivo <lb/>
+                    per l’opposizione, o l’insufficenza delle persone a cui la <lb/>
+                    repubblica ha affidati i suoi destini, ovvero anche qualche <lb/>
+                    vizio della sua costituzione ? Certo il temperamento fran- <lb break="no"/> 
+                    cese non è un modello di costanza ; tuttavia è molto più pa- <lb break="no"/> 
+                    ziente di quello che ad altri non piaccia immaginare, e il vizio <lb/>
+                    principale della <orgName>costituzione repubblicana<orgName>, vale a dire la <lb/>
+                    preponderanza che essa dà alla maggioranza della <orgName>Camera<orgName> <lb/>
+                    dei deputati, le è comune colla maggior parte delle costi- <lb break="no"/> 
+                    tuzioni dei paesi rappresentativi. No! il male non è lì; il <lb/>
+                    male è nell’inesperienza politica e amministrativa di un par- <lb break="no"/> 
+                    tito che, da un mezzo secolo, è stato un partito di cospi- <lb break="no"/> 
+                    ratori e di opposizione e che non ha nè le tradizioni nè l’edu- <lb break="no"/> 
+                    cazione necessaria per trasformarsi da un momento all’altro <lb/>
+                    in un partito di governo. Cotesta trasformazione non può ef- <lb break="no"/> 
+                    fettuarsi che alla lunga; non si rompe colle proprie tradizioni <lb/>
+                    nè si rifa la propria educazione in un giorno; ma frattanto che <lb/>
+                    diverrà la repubblica coi suoi ufficiali incapaci, i suoi amici <lb/>
+                    irrequieti e i nemici che stanno spiando le sue imprudenze <lb/>
+                    e i suoi errori? Vedendo la piega che prendono le cose, ri- <lb break="no"/> 
+                    comincio a temere, lo confesso, che la repubblica non sia <lb/>
+                    di nuovo se non un semplice accidente rivoluzionario, e che <lb/>
+                    noi ci aggiriamo ancora una volta nei circolo vizioso e <lb/>
+                    continuo delle rivoluzioni e delle restaurazioni. Il governo <lb/>
+                    però ha avuto l’energia e il buon senso di opporsi al pro- <lb break="no"/> 
+                    cesso dei ministri del <date corresp="#crisi_16_maggio">16 maggio</date>, e la Camera gli badato <lb/>
+                    causa vinta a una maggioranza considerevole : 317 voti <lb/>
+                    contro 159. Non già che non ci fosse materia per un processo, <lb/>
+                    soprattutto nell’ultima parte di questa trista avventura. <lb/>
+                    I ministri del <date corresp="#crisi_16_maggio">16 maggio</date> non essendo riusciti nel loro ten- <lb break="no"/> 
+                    tativo di crearsi una maggioranza coll’intimidire e corrom- <lb break="no"/> 
+                    pere il <term>suffragio universale</term>, è evidente che l’idea di un <lb/>
+                    <term corresp="#crisi_16_maggio">colpo di Stato</term> germogliò nella mente degli uomini che si <lb/>
+                    sentivano maggiormente compromessi e che, per un mo- <lb break="no"/> 
+                    mento, hanno voluto andare fino in fondo. Sono state con- <lb break="no"/> 
+                    sultate notabilità militari, sono state prese disposizioni in <lb/>
+                    vista di un colpo di Stato; ma sia che mancassero di ri- <lb break="no"/> 
+                    solutezza o che non credessero di poter contare sull’eser- <lb break="no"/> 
+                    cito, hanno dato indietro e il <event corresp="#crisi_16_maggio">colpo di Stato</event> è andato a <lb/>
+                    vuoto. Tutto ciò è senza dubbio da condannarsi, ma in <lb/>
+                    politica bisogna sapersi contentare di vincere e non oppri- <lb break="no"/> 
+                    mere gli avversari. Il governo quindi ha fatto bene di respin- <lb break="no"/> 
+                    gere il processo del <date corresp="#crisi_16_maggio">16 maggio</date>; avrebbe fatto anche meglio <lb/>
+                    di opporsi all’ordine del giorno che stigmatizza il <persName key="Jean-Philippe Rameau"><surname>Rameau</surname></persName> e <lb/>
+                    soprattutto di non consentire che si affìggesse in tutti i comuni <lb/>
+                    di <placeName><country>Francia</country></placeName>. A che pro ? Il vero mezzo di condannare il <date corresp="#crisi_16_maggio">16 <lb/>
+                    maggio</date>, e anche di vituperarlo agli occhi dell’opinione, non è <lb/>
+                    forse di provare che questa repubblica, che la gente del <lb/>
+                    <date corresp="#crisi_16_maggio">16 maggio</date> voleva abbattere, è il governo più atto a fare <lb/>
+                    la felicità dei Francesi? Avete un bel mettere i vostri av- <lb break="no"/> 
+                    versari in prigione e imprimere loro il marchio più umi- <lb break="no"/> 
+                    liante, non avrete fatto nulla se non proverete che il vostro <lb/>
+                    governo è preferibile al loro. Ebbene, questa prova decisiva <lb/>
+                    i vincitori del <date corresp="#crisi_16_maggio">16 maggio</date> non sono precisamente in via di <lb/>
+                    darla, e da quando sono agli affari non hanno lasciato pas- <lb break="no"/> 
+                    sare un solo giorno senza commettere una balordaggine: <lb/>
+                    l’inchiesta sulla <orgName>prefettura di polizia</orgName> che ha portato seco <lb/>
+                    la caduta del <persName key="Émile de Marcère"><roleName>ministro dell’ interno</roleName><surname>de Marcère</surname></persName> e del <persName><roleName>pre- <lb break="no"/> 
+                    fetto di polizia</roleName> Albert Gigo t</persName> ; lo sconvolgimento del perso- <lb break="no"/> 
+                </p>
+
+                <pb n="2" facs="#CorrispondenzaDaParigi_pag2">
+                <cb n="3">
+
+                <p>
+                    nale amministrativo e giudiziario; l’aggiornamento della <lb/>
+                    conversione del 5 0[0, e soprattutto le circostanze che hanno <lb/>
+                    accompagnato questo aggiornamento ; finalmente i tenta- <lb break="no"/>
+                    tivi del nuovo <persName key="Edmond Henri Turquet"><roleName>direttore delle Belle Arti<roleName>, <surname>Turquet</surname></persName>, per <lb/>
+                    moralizzare il teatro: ecco una intera serie d’imprudenze <lb/>
+                    e di sbagli che spiegano abbastanza il ridestarsi della <lb/>
+                    reazione, e che fanno rimettere in questione la possibilità <lb/>
+                    dello stabilimento definitivo della repubblica in <placeName><country>Francia</country></placeName>. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>La <orgName>prefettura di polizia<orgName> è sotto molti aspetti un semen- <lb break="no"/>
+                    zaio di abusi e di pratiche viziose. Checché ne dicano i no- <lb break="no"/>
+                    stri giornali conservatori, si può fare la polizia senza dare <lb/>
+                    agli agenti inferiori il diritto di bastonare gl’incolpati o di <lb/>
+                    stringere loro i polsi fino al sangue, e non è necessario <lb/>
+                    alla sicurezza pubblica il sapere se il tal personaggio in- <lb break="no"/>
+                    fluente ha l’abitudine di dormire a casa sua o fuori; ma <lb/>
+                    l’esperienza ha dimostrato che una inchiesta pubblica non <lb/>
+                    era quello che ci voleva per metter fine a questo genere <lb/>
+                    di abusi. L’inchiesta ha fatto fiasco, e quantunque il nuovo <lb/>
+                    <persName key="Louis Andrieux"><roleName>prefetto di polizia</roleName>, <surname>Andrieux</surname></persName>, sia un antico radicale, scom- <lb break="no"/>
+                    metterei che gli abusi perdureranno. — Gl’impiegati politici <lb/>
+                    dell’amministrazione dovevano senza dubbio essere modificati, <lb/>
+                    ma a che scopo metter la mano sugl’impiegati inferiori ? <lb/>
+                    Sono giunti fino a congedare fattorini della posta — <lb/>
+                    donde avviene che non si sono mai perdute tante lettere! <lb/>
+                    In quanto ai cambiamenti negli alti impiegati, non sono <lb/>
+                    stati tutti egualmente felici ! Per esempio, è un grande <lb/>
+                    sbaglio l’aver nominato il fratello del presidente, il <addName>signor</addName> <lb/>
+                    <persName><forename>Alberto</forename> <surname>Grévy</surname>, <roleName>governatore generale dell’<placeName><country>Algeria</country></placeName></roleName></persName>. Il signor <lb/>
+                    <persName><forename>Alberto</forename> <surname>Grévy</surname></persName> è un avvocato mediocre che sarà certamente <lb/>
+                    al disotto del posto considerevole e difficile che gli è affi- <lb break="no"/>
+                    dato. E dopo ciò giudicate ancora mal fatto che i primi <lb/>
+                    impieghi delle monarchie sieno affidati ai <unclear reason="faded">princ’pi<corr>principi</corr></unclear> del san- <lb break="no"/>
+                    gue ! Ai piccoli giornali reazionari cade in acconcio il chia- <lb break="no"/>
+                    mare il <addName>signor</addName> <persName><forename>Alberto</forename> <surname>Grévy</surname> <addName><hi rend="italic">Monsieur</hi></addName> <roleName>fratello del re<roleName></persName>. Ho <lb/>
+                    da buona fonte che il <persName><roleName>presidente</roleName><persName> ha subito compreso il <lb/>
+                    cattivo effetto che produrrebbe questa nomina e che le si <lb/>
+                    è mostrato ostile — ma ha avuto il torto e la debolezza <lb/>
+                    di cedere poi alla ressa della sua famiglia e del suo seguito. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>L’aggiornamento della conversione del 5 0[0 è stato un <lb/>
+                    incidente infinitamente più grave ancora, a cagione delle <lb/>
+                    circostanze increscevoli che lo hanno accompagnato. Si può <lb/>
+                    discutere sull’utilità delle conversioni, e io credo per parte <lb/>
+                    mia che i governi avrebbero tornaconto a prendere in pre- <lb break="no"/>
+                    stito con un fondo non convertibile in fatto, se non in di- <lb break="no"/>
+                    ritto, come il 3 0[0, piuttosto che esporre i portatori di un <lb/>
+                    fondo suscettibile di salire a 115, 120 e anche a 125, saggio <lb/>
+                    che il 5 0[0 toccò nel <date when="1814">1814</date> — al <hi rend="italic">rischio</hi> di un rimborso alla <lb/>
+                    pari. Il pubblico si assicura contro questo rischio prestando <lb/>
+                    a prezzo più caro. Ma s’intendeva bene che il 5 0[0 sa- <lb break="no"/>
+                    rebbe convertito quando la conversione fosse possibile, e <lb/>
+                    doveva resultarne per i<unclear reason="printer's error">‚<corr></corr></unclear>contribuenti un’ economia annua <lb/>
+                    di 31 milioni che non era certo da disprezzarsi ! Ora, le <lb/>
+                    circostanze attuali erano visibilmente favorevoli alla con- <lb break="no"/>
+                    versione — il danaro abbonda ed è difficilissimo di collo- <lb break="no"/>
+                    carlo al 4 0[0 sopra garanzie di prima scelta. Quindi la <lb/>
+                    commissione del bilancio recentemente ricostituita erasi <lb/>
+                    pronunziata in favore di questa importante misura e l’opi- <lb break="no"/>
+                    nione del ministro delle finanze non le era contraria. Il <lb/>
+                    giorno <date when="--02-22">22 febbraio</date> se ne sparse la voce alla <orgName>Borsa</orgName> e il <lb/>
+                    5 0[0 che avea toccato il corso di 112 a 113, scese in quel <lb/>
+                    giorno e nei tre seguenti fino a 109. Invece di prendere <lb/>
+                    una risoluzione immediata, il governo ebbe il torto di non <lb/>
+                    mostrare di curarsi di quello che accadeva alla borsa, e fu <lb/>
+                    soltanto il <date when="----02-25">mattino del 25</date> che il <orgName>Consiglio dei ministri</orgName> si <lb/>
+                    riunì per occuparsi della questione. Il <saluet>signor</addName> <persName key="Alberto Grévy"><surname>Grévy</surname></persName> aprì <lb/>
+                    la seduta dichiarando, che nel momento appunto in cui la <lb/>
+                    <orgName>Repubblica era realmente istituita, la conversione gli sem- <lb break="no"/>
+                </p>
+
+                <cb n="4"/>
+
+                <p>
+                    brava politicamente inopportuna, che scontenterebbe gra- <lb break="no"/>
+                    vemente la moltitudine dei piccoli possessori di Rendita; <lb/>
+                    che fu così che l’imposta dei 45 centesimi prelevata dalla <orgName>re- <lb break="no"/>
+                    pubblica del <date when="1848">1848</date></orgName> l’aveva resa impopolare; che non bisogna <lb/>
+                    rinnuovare uno sbaglio simile, <abbr>ec., ecc</abbr><expan>eccetera, eccetera</expan>. Queste ragioni con- <lb break="no"/>
+                    vinsero la grande maggioranza dei membri del <orgName>Consiglio</orgName>. <lb/>
+                    Non vi furono se non i due ministri delle finanze e del- <lb break="no"/>
+                    l’istruzione pubblica, <persName key="Leon_Say"><surname>Say</surname></persName>  e <persName key="Jules_Ferry"><forename>Jules</forename> <surname>Ferry</surname></persName>, che si pronun- <lb break="no"/>
+                    ziarono con tutto ciò in favore della conversione. Uscendo <lb/>
+                    dal <orgName>Consiglio dei ministri</orgName>, <time when="11.00">alle 11</time>, <persName key="Leon_Say"><forename>Léon</forename> <surname>Say</surname></persName> comunicò la <lb/>
+                    decisione del <orgName>Consiglio</orgName> al <persName key="Henri Moreau"><addName>signor</addName> <surname>Moreau</surname> <roleName>sindaco</roleName> degli <lb/>
+                    agenti di cambio</persName>, invitandolo a farla conoscere alla Borsa. <lb/>
+                    Il <persName key="Henri Moreau"><addName>signor</addName> <surname>Moreau</surname></persName> ebbe il torto di prevenire i <addName>signori</addName> <persName key="Rothschild"><surname>De <lb/>
+                    Rothschild</surname></persName> e <persName key="Isaac_Pereire"><surname>Pereire</surname></persName> e di annunziare solamente alle <time when="01:40">alle 1 40</time> <lb/>
+                    questa grande notizia alla <orgName>Borsa</orgName> ove provocò subito un <lb/>
+                    rialzo di  <measure unit="franchi" quantity="2">2 fr</measure>. Da ciò naturalmente guadagni enormi per <lb/>
+                    le persone bene informate, e perdite non meno enormi per <lb/>
+                    quelli che non lo erano, e violenti recriminazioni contro <lb/>
+                    il <persName><roleName>sindaco</roleName></persName> degli <orgName>Agenti di cambio</orgName> e il <orgName>Ministero</orgName>. Io non <lb/>
+                    I conosco il <persName><roleName>sindaco</roleName></persName> degli <orgName>Agenti di cambio</orgName> e posso affer- <lb break="no"/>
+                    mare che la probità del <persName><roleName>Ministro delle finanze</roleName></persName> è superiore <lb/>
+                    a ogni sospetto ; ma tutta questa faccenda non attesta un <lb/>
+                    lasciar correre deplorevole ? Non faceva mestieri arrestare <lb/>
+                    subito il ribasso prendendo una decisione immediata, invece <lb/>
+                    di aspettare che il corso fosse caduto di <measure unit="franchi" quantity="2">3 franchi</measure>? Si sa- <lb break="no"/>
+                    rebbero rispiarmiate così perdite sensibili al <orgName>pubblico dei <lb/>
+                    capitalisti</orgName>, e agli <persName><roleName>officiali del governo</roleName></persName> l’accusa di essere <lb/>
+                    ' conniventi cogli speculatori e di non avere le mani nette : <lb/>
+                    ‘ la peggiore di tutte le accuse. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Che dirò, dopo ciò, delle circolari del <persName key="Edmond Henri Turquet"><surname>Turquet</surname></persName>per moraliz- <lb break="no"/>
+                    zare il teatro ? Che la censura impedisca la rappresentazione <lb/>
+                    di spettacoli grossolanamente immorali o indecenti, sia pure! <lb/>
+                    ma non è mostrarsi troppo ingenuo l’ attribuire alla re- <lb break="no"/>
+                    pubblica il potere di riformare i costumi e di mettere la virtù <lb/>
+                    all’ordine del giorno al teatro, alla borsa ed altrove? I no- <lb break="no"/>
+                    stri repubblicani non sono cattivi ; ve ne sono molti onesti <lb/>
+                    e bene intenzionati, ma come sono inesperti e ignoranti! <lb/>
+                    È stato detto che il <rs type="religious">regno dei Cieli</rs> appartiene ai poveri di <lb/>
+                    spirito ; bisogna credere che quel regno sia più facile a <lb/>
+                    custodire che le <orgName>repubbliche della terra<orgName>.
+                </p>
+
+            </body>
+        </text>
+    </TEI>
+
+    <!-- ART 2: Volume 9, Fascicolo 212 Lettere militari, le necessità militari-->
+    <TEI>
+        <teiHeader>
+            <fileDesc> <!-- descrizione bibliografica del documento -->
+
+                <titleStmt>
+                    <title>Lettere militari</title>
+                    <title><subtitle>Le necessità militari</subtitle></title>
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>Università di Pisa</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title level="j"> La Rassegna Settimanale</title>
+                        <title><subtitle>di politica, scienze, lettere ed arti</subtitle></title>
+                        <author><abbr>R.</abbr></author>
+                        <date when="1882-01-22">22 gennaio 1882</date>
+                        <biblScope unit="volume">9</biblScope>
+                        <biblScope unit="issue">212</biblScope>
+                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-212-volume-9-1882-semestre-1-trimestre-1/"></edition>
+                    </bibl>
+                </sourceDesc>
+            
+
+            </fileDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface n="1" xml:id="LettereMilitari_pag1">
+                <graphic url="img/LettereMilitari_pag1"/>
+            </surface>
+            <surface n="2" xml:id="LettereMilitari_pag2">
+                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1"/>
+            </surface>
+        </facsimile>
+
+        <text>
+            <body>
+                <pb n="1" facs="#LettereMilitari_pag1"/>
+                <cb n="1"/>
+
+                <space dim="horizontal" extent="5cm"><title><hi rend="smallcaps">LETTERE MILITARI</hi></title><space dim="horizontal" extent="5cm"> <lb/>
+                <space dim="horizontal" extent="6cm"><subtitle><hi rend="smallcaps">LE NECESSITà MILITARI</hi></subtitle><space dim="horizontal" extent="6cm"><lb/>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/> Non fa d’uopo possedere acuta la vista degli occhi e <lb/>
+                    dell’intelligenza per vedere come carica di elettricità sia <lb/>
+                    in questo momento l’atmosfera politica di <placeName><region type="continent">Europa</region></placeName> e come <lb/>
+                    sia imminente lo scoppio del fulmine di una guerra. Le no- <lb break="no"/>
+                    tizie delle più autorevoli provenienze ci mandano dall’e- <lb break="no"/>
+                    stero un all’ arme continuo per le preoccupazioni e gli alle <lb/>
+                    stimenti febbrili delle nazioni a noi finitime. Per noi ormai <lb/>
+                    sia questione di esistenza il destarci ed uscire dall’isola- <lb break="no"/>
+                    mento. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Facciamolo oggi, che domani non saremmo forse più in <lb/>
+                    tempo. Procuriamo di stringere le nostre alleanze prima <lb/>
+                    che un potente vicino non venga a porci nelle strette del <lb/>
+                    dilemma - o con noi o contro di noi. Ed a tale dilemma <lb/>
+                    non potrà assolutamente sfuggire una nazione di trenta mi- <lb break="no"/>
+                    lioni di abitanti, che asserisce di poter disporre di quattro- <lb break="no"/>
+                    cento mila soldati e ch’è situata in mezzo al teatro delle <lb/>
+                    imminenti battaglie. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>È però presto detto: stringiamo le nostre alleanze! Nes- <lb break="no"/>
+                    suno vorrà saperne, perchè quando ci domanderanno, come <lb/>
+                    condizione fondamentale dell’alleanza, quante centinaia di <lb/>
+                    migliaia di uomini siamo in grado d’inviare oltre la nostra <lb/>
+                    frontiera, noi risponderemo che siamo pronti a difendere <lb/>
+                    il nostro territorio. Ognuno si congratulerà con noi di questa <lb/>
+                    forza, ma non potendosene giovare, non ci farà di certo il fa- <lb break="no"/>
+                    vore di accettarci in un contratto di cui non divideremmo i <lb/>
+                    pesi e gli svantaggi. Le ragioni dell’isolamento politico ita- <lb break="no"/>
+                    liano risiedono essenzialmente nel fatto che l’<placeName><country>Italia</country></placeName> non seppe <lb/>
+                    e non volle crearsi un ordinamento militare capace per l'of- <lb break="no"/>
+                    fensiva, come se, uniformandosi al principio sommo del- <lb break="no"/>
+                    l’arte militare, secondo il quale gli eserciti difendono nel <lb/>
+                    miglior modo il loro territorio attaccando l’avversario, <lb/>
+                    avesse pregiudicato il concetto della difesa. Sin da quando <lb/>
+                    s’incominciarono gli studi del nuovo ordinamento difen- <lb break="no"/>
+                    sivo e si traducevano poi in legge nel <date when="1873">1873</date>, furono pubbli- <lb break="no"/>
+                    camente deplorate le meschine proporzioni della cavalleria, <lb/>
+                    quelle dell’artiglieria in genero e del calibro pesante in <lb/>
+                    ispecie, confutando l’obbiezione, che per la difesa dello <lb/>
+                    Stato siffatte proporzioni bastavano, coll’argomento prin- <lb break="no"/>
+                    cipe e antichissimo che gli eserciti vogliono essere co- <lb break="no"/>
+                    stituiti in modo da portar la guerra in casa del nemico. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Quando nel <date when="1875">1875</date> il <persName><roleName>maresciallo</roleName> <surname>Moltke</surname></persName> esaminò da vicino <lb/>
+                    le nostre condizioni politico-militari, la sentenza che emise<lb/>
+                </p>
+
+                <pb n="2" facs="#LettereMilitari_pag2"/>
+                <cb n="2"/>
+
+                <p>
+                    su di noi suonava presso a poco così: <q><quote>Il criterio dell’effi- <lb break="no"/>
+                    cacia di un esercito, anche per la guerra difensiva sta nella<lb/>
+                    sua capacità offensiva. L’<placeName><country>Italia</country></placeName> , per la lunghezza delle sue <lb/>
+                    coste indifese e per l’insufficienza della sua marina mili- <lb break="no"/>
+                    tare, non può difendersi se non portando la guerra nel <lb/>
+                    territorio nemico : essa così meno di ogni altra potenza mi- <lb break="no"/>
+                    litare, è apprezzabile come alleata, se non ha un esercito <lb/>
+                    capace di operare al di là dei propri confini. —</quote></q> La lezione <lb/>
+                    del grande stratega non fece pro: l’<placeName><country>Italia</country></placeName>  continuò a cul- <lb break="no"/>
+                    larsi nei sogni dorati della pace, di cui essa consideravasi <lb/>
+                    in <placeName><region type="continent">Europa</region></placeName> come una specie di pegno, e gli allestimenti mi- <lb break="no"/>
+                    litari furono costantemente indirizzati a difesa.<lb/>
+                </p>
+                
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Ci svegliamo un triste giorno soli, respinti da tutti, da <lb/>
+                    tutti minacciati, e dobbiamo riconoscere che il nostro in- <lb break="no"/>
+                    dirizzo militare è sbagliato. <lb/>
+                </p>
+                
+                <p>
+                    L’<persName><addName>onorevole</addName> <roleName>ministro della guerr</roleName></persName> ha recato dinanzi alla <lb/>
+                    <orgName>Camera</orgName> un progetto di nuovo ordinamento dell’esercito, <lb/>
+                    e sebbene sia stato dalla <title><hi rend="italic">Rassegna</hi></title> combattuto ne’suoi par- <lb break="no"/>
+                    ticolari, <ref target="#nota">*</ref> tuttavia è indubitato che un aumento di potere <lb/>
+                    militare lo reca; onde in presenza dei tempi minacciosi noi <lb/>
+                    siamo certi che tutti sono oramai disposti ad accettarne <lb/>
+                    le principali disposizioni. Un altro interessante progetto <lb/>
+                    ha presentato il <persName><roleName>generale</roleName> <surname>Ferrero</surname></persName>, ch’è quello per la spesa <lb/>
+                    straordinaria di <measure unit="lire" quantity="144,180,000">144,180,000 lire</measure> per i provvedimenti mili- <lb break="no"/>
+                    tari, e questo nemmeno non verrà osteggiato. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Se non che entrambi i progetti sono ispirati, non di <lb/>
+                    certo quanto gli altri che li hanno preceduti, al principio <lb/>
+                    delle difensiva e soprattutto subiscono troppo l’influenza di <lb/>
+                    preoccupazioni finanziarie, cosicché non faranno sentire i <lb/>
+                    loro completi effetti che ad una scadenza lontana di due, <lb/>
+                    tre ed anche più anni; ciò che'è in violento contrasto colla <lb/>
+                    situazione nostra presente. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Ma è proprio vero che il nostro <orgName>esercito</orgName>, così ricco di <lb/>
+                    personale combattente, non possa ricevere ancora una certa <lb/>
+                    attitudine offensiva da rendere gradita e ricercata la no- <lb break="no"/>
+                    stra alleanza? Non lo crediamo, anzi siamo convinti del <lb/>
+                    contrario. Esaminiamo per un momento come potremmo <lb/>
+                    conseguire un grado relativo di così fatta attitudine. Ognuno <lb/>
+                    sa che la <orgName>cavalleria</orgName>, l’<orgName>artiglieria</orgName> ed i quadri della <orgName>milizia <lb/>
+                    mobile</orgName> sono nelle maggiori sofferenze : portate a <measure unit="cavalli" quantity="160">160 i ca- <lb break="no"/>
+                    valli</measure> degli <orgName>squadroni</orgName>, di cui metà ne hanno ora <measure unit="cavalli" quantity="125">125</measure> e metà <lb/>
+                    <measure unit="cavalli" quantity="130">130</measure>, comperate in una parola, calcolando anche la rimonta <lb/>
+                    annuale, <measure unit="cavalli" quantity="6300">6300 cavalli</measure>, e voi potrete senza inconvenienti <lb/>
+                    sdoppiar soluto i <orgName>reggimenti</orgName>, o per meglio dire formarne <measure unit="reggimenti" quantity="30">30</measure> <lb/>
+                    dei <measure unit="reggimenti" quantity="20">20</measure> che ora esistono e costituire così una ed anche due <lb/>
+                    divisioni indipendenti con gli squadroni a <measure unit="cavalli" quantity="150">150 cavalli</measure> mo- <lb break="no"/>
+                    bilizzati.<lb/>
+                </p>
+
+                <p>
+                    <list> <!--lista provvedimenti-->
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>Formate 20 nuove batterie da <measure unit="centimetri" quantity="9">cent. 9</measure> con 80 cavalli cia- <lb break="no"/>
+                                scuna, e per far presto assegnatene due per ogni <orgName>reggi <lb break="no"/>
+                                mento da campagna</orgName>; <lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>portate a 80 la forza cavalli delle 10 batterie da 9 esi- <lb break="no"/>
+                                stenti ed a 70 i cavalli delle 60 batterie da 7 onde possan <lb/>
+                                tutte passare rapidamente alla seconda formazione (6 pezzi); <lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>costituite le 4 batterie a cavallo, in punto per entrare <lb/>
+                                in campagna;<lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>tenete pronti i cavalli (70 per quelle da 7 e 80 per <lb/>
+                                quelle da 9) per le 30 batterie della <orgName>milizia mobile</orgName>;<lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>completate il munizionamento a 600 colpi per pezzo;<lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>ultimate i più essenziali allestimenti di mobilita- <lb break="no"/>
+                                zione;<lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>chiamate ad un’ istruzione di tre mesi 2000 ufficiali di <lb/>
+                                complemento, i quali vi porranno in grado di provvedere in <lb/>
+                                qualche maltiera ai quadri della milizia mobile; <lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>create altri 100 battaglioni di <orgName>milizia territoriale</orgName>; <lb/>
+                            </p>
+                        </item>
+                        <item>
+                            <p>
+                                <space dim="horizontal" extent="0,5cm" reason="initial"/>non dimenticate di spingere con la maggiore alacrità<lb/>
+                            </p>
+
+                            <p>
+                                <note xml:id="nota" n="*"><abbr>V.</abbr><hi rend="italic">Rassegna</hi>, <abbr>Vol.</abbr><expan>Volume</expan>, <abbr>pag.</abbr><expan>pagina</expan> 290 e 305</note>
+                            </p>
+                            <pb n="3"/>
+                            <cb n="3"/>
+                            <p>
+                                possibile le costruzioni e gli apparecchi della <orgName>marina mi- <lb break="no"/>
+                                litare</orgName>. <lb/>
+                            </p>
+                        </item>
+                    </list>
+                </p>
+                
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Compiuti questi preliminari provvedimenti, voi potrete 
+                    offrire in un'alleanza il potente aiuto di sette corpi d’ar- <lb break="no"/>
+                    mata, allestiti di tutto punto, e di cinque divisioni auto- <lb break="no"/>
+                    nome di milizia mobile, vale a dire il cospicuo contingente <lb/>
+                    di 300,000 combattenti. Altri tre corpi d’armata e cinque <lb/>
+                    divisioni di milizia mobile con circa 30,000 alpini e 200 <lb/>
+                    battaglioni territoriali vi rimarranno a difesa del suolo na- <lb break="no"/>
+                    zionale. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Ed ora veniamo alle cifre :<lb/>
+                </p>
+
+                
+                <table>
+                    <row role="head">
+                        <cell>Descrizione</cell>
+                        <cell>Numero</cell>
+                        <cell>Prezzo</cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli per i reggimenti di cavalleria</cell>
+                        <cell><measure unit="cavalli" quantity="6300">6,300</measure></cell>
+                        <cell><measure quantity="6300000">6,300,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli per le 20 nuove batterie da 9</cell>
+                        <cell><measure unit="cavalli" quantity="1600">1,600</measure></cell>
+                        <cell><measure quantity="1600000">1,600,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli 26 per ognuna delle 40 batterie da 9</cell>
+                        <cell><measure unit="cavalli" quantity="1040">1,040</measure></cell>
+                        <cell><measure quantity="1040000">1,040,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli 16 per ognuna delle 60 batterie da 7</cell>
+                        <cell><measure unit="cavalli" quantity="1040">960</measure></cell>
+                        <cell><measure quantity="960,00">960,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli 70 per ognuna delle 20 batterie da 7 della <abbr>M. M.</abbr></cell>
+                        <cell><measure unit="cavalli" quantity="1040">1400</measure></cell>
+                        <cell><measure quantity="960,00">1,400,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli 80 per ognuna delle 10 batterie da 9 della <abbr>M. M.</abbr></cell>
+                        <cell><measure unit="cavalli" quantity="1040">800</measure></cell>
+                        <cell><measure quantity="960,00">800,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Cavalli per le 4 batterie a cavallo</cell>
+                        <cell><measure unit="cavalli" quantity="1040">680</measure></cell>
+                        <cell><measure quantity="960,00">680,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Costruzione ad acquisto del materiale da <measure unit="centimetri" quantity="9">cent. 9</measure></cell>
+                        <cell> - </measure></cell>
+                        <cell><measure quantity="3,000,000">3,000,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Completare a 600 colpi per pezzo il munizionamento</cell>
+                        <cell> - </measure></cell>
+                        <cell><measure quantity="1,500,000">1,500,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Completare allestimenti di mobilitazione</cell>
+                        <cell> - </measure></cell>
+                        <cell><measure quantity="2,000,000">2,000,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Spesa per l'istruzione di 2000 ufficiali di complemento</cell>
+                        <cell> - </measure></cell>
+                        <cell><measure quantity="1,000,000">1,000,000</measure></cell>
+                    </row>
+
+                    <row>
+                        <cell>Provvista di oggetti di equipaggiamento e di arredamento</cell>
+                        <cell> - </measure></cell>
+                        <cell><measure quantity="4,720,000">4,720,000</measure></cell>
+                    </row>
+
+                    <row role="total">
+                        <cell><hi rend="italic">Totale</hi> Prezzo</cell>
+                        <cell/>
+                        <cell><measure quantity="25000000">25,000,000</measure></cell>
+                    </row>
+                </table>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Senza punto sacrificare i propri progetti, chieda il <persName><roleName>ge- <lb break="no"/>
+                    nerale</roleName> <surname>Ferrero</surname> l’autorizzazione per la spesa immediata a <lb/>
+                    cifre rotonde di <measure quantity="25 milioni">25 milioni</measure>, e vedrà che saranno unanimi <lb/>
+                    e <orgName>Parlamento</orgName> e <orgName>Ministro delle finanze</orgName> nell’accordarglieli: <lb/>
+                    è urgente carità di patria il farlo, e le favorevoli condizioni <lb/>
+                    finanziarie in cui si è chiuso il <date when="1881">1881</date> lo consentono.<lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>I provvedimenti da noi accennati sono tanto più ur- <lb break="no"/>
+                    genti, inquanto che per grandissima parte concernono l’ac- <lb break="no"/>
+                    quisto di cavalli, a cui dovremmo dare immediatamente opera <lb/>
+                    all’interno ed all’estero per non trovare il nostro mercato <lb/>
+                    sfruttato dagli stranieri, come si sa che hanno cominciato <lb/>
+                    a fare, per esempio, in <placeName><region>Sicilia</regione></placeName> e nel <placeName><region>Napoletano</regione></placeName> su vasta <lb/>
+                    scala, e non vederci chiuso quello estero. A tale propo- <lb break="no"/>
+                    sito è bene osservare che il <orgName>Ministero</orgName> potrà conseguire <lb/>
+                    notevoli risparmi ove tenga bene aperti gli occhi e cambi <lb/>
+                    il sistema di rimonta seguito sinora, il quale, a detta di <lb/>
+                    tutti gli ufficiali dell’arma, ha dato pessimi risultati. Di <lb/>
+                    un’altra cosa deesi tener conto, di far, cioè, passare dalla <lb/>
+                    cavalleria all’artiglieria i cavalli dai 13 ai 15 anni e più, i <lb/>
+                    quali non sono più idonei al servizio della cavalleria e sa- <lb break="no"/>
+                    rebbero invece eccellenti come cavalli da tiro: essi costi- <lb break="no"/>
+                    tuiscono nientemeno che la sesta parte dei cavalli di ogni <lb/>
+                    reggimento.<lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Di pari passo ai provvedimenti da noi accennati do- <lb break="no"/>
+                    vrebbero procedere la costruzione e l’armamento delle difese <lb/>
+                    della frontiera terrestre, delle coste e della capitale, la fab- <lb break="no"/>
+                    bricazione delle armi portatili, gli apparecchi del naviglio <lb/>
+                    e, appena terminato il grosso del lavoro, il mettere al si- <lb break="no"/>
+                    curo gli stabilimenti militari di <placeName><settlement type="town">Torino</settlement></placeName>.<lb/>
+                </p>
+
+                <p>
+                    Al <persName><roleName>generale</roleName> <surname>Ferrero</surname></persName> sarebbe forse facile armonizzare il <lb/>
+                    progetto da noi imperfettamente abbozzato in questo scritto <lb/>
+                </p>
+
+                <cb n="4"/>
+
+                <p>
+                    con quelli da esso elaborati; in ogni modo, accetti o no le <lb/>
+                    nostre idee, l’essenziale è che faccia e faccia presto, poiché <lb/>
+                    egli da un momento all’altro si può trovare di fronte al <lb/>
+                    paese e più tardi di fronte alla storia che gli chiedano conto <lb/>
+                    dell’ordinamento militare nazionale. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Occorre sempre tener fisso dinanzi alla mente il con- <lb break="no"/>
+                    cetto che, fintantoché il nostro ordinamento militare sarà ri- <lb break="no"/>
+                    volto soltanto ad un’azione isolata, quale sarebbe quella <lb/>
+                    intesa alla pura difesa del territorio, l’<placeName><country>Italia</country></placeName> si troverà <lb/>
+                    sempre isolata anche politicamente. <lb/>
+                </p>
+
+            </body>
+        </text>
+
+    </TEI>
+
+    <!--ART 3: Volume 9, Fascicolo 212 Don Licciu Papa-->
+    <TEI>
+        <teiHeader>
+            <fileDesc> <!-- descrizione bibliografica del documento -->
+
+                <titleStmt>
+                    <title>Don Licciu Papa</title>
+                    <title><subtitle>Le necessità militari</subtitle></title>
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>Università di Pisa</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title level="j"> La Rassegna Settimanale</title>
+                        <title><subtitle>di politica, scienze, lettere ed arti</subtitle></title>
+                        <author><persName><forename>Giovanni</forename><surname>Verga</surname></persName></author>
+                        <date when="1882-01-22">22 gennaio 1882</date>
+                        <biblScope unit="volume">9</biblScope>
+                        <biblScope unit="issue">212</biblScope>
+                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-212-volume-9-1882-semestre-1-trimestre-1/"></edition>
+                    </bibl>
+                </sourceDesc>
+
+            </fileDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface n="1" xml:id="DonLicciuPapa_pag1">
+                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1"/>
+            </surface>
+            <surface n="2" xml:id="DonLicciuPapa_pag2">
+                <graphic url="img/DonLicciuPapa_pag2"/>
+            </surface>
+            <surface n="3" xml:id="DonLicciuPapa_pag3">
+                <graphic url="img/DonLicciuPapa_pag3"/>
+            </surface>
+        </facsimile>
+
+        <text>
+            <body>
+                <pb n="1" facs="#DonLicciuPapa_pag1"/>
+                <cb n="1"/>
+
+                <space dim="horizontal"/><head type="title"><hi rend="smallcaps"><persName type="fictional"><addName>DON</addName> <forename>LICCIU</forename> <surname>PAPA.</surname></persName></hi></head><space dim="horizontal"/><lb/>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Le comari filavano al sole, e le galline razzolavano nel <lb/>
+                    pattume, davanti agli usci, allorché successe un gridio, un <lb/>
+                    fuggi fuggi per tutta la stradicciuola, che si vide comparire <lb/>
+                    da lontano lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename>, l’<roleName>acchiappaporci</roleName></persName>, col laccio in mano ; <lb/>
+                    e il pollame scappava schiamazzando, come se lo cono- <lb break="no"/>
+                    scesse. <lb/>
+                </p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName> si buscava dal municipio <measure unit="centesimi" quantity="50">50 centesimi</measure> per <lb/>
+                    le galline, e <measure unit="lire" quantity="3">3 lire<measure>per ogni maiale che sorprendeva in con- <lb break="no"/>
+                    travvenzione. Egli preferiva i maiali. E come vide la por- <lb break="no"/>
+                    cellina di <persName type="fictional" key="comare Santa"><addName>comare</addName> <forename>Santa<forename></persName>stesa tranquillamente col muso nel <lb/>
+                    brago di contro all’uscio, gli gittò al collo il nodo scorsoio. <lb/>
+                    <q type="spoken">— Ahi Madonna santissima! Cosa fate, zio Masi!</q> — gri- <lb break="no"/>
+                    dava la <persName type="fictional" key="comare Santa"><addName>zia</addName> <forename>Santa<forename></persName>, pallida come una morta. <q type="spoken">Per carità, zio <lb/>
+                    Masi, non mi acchiappate la multa, che mi rovinate !</q> <lb/>
+                <p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>, il traditore, per pigliarsi il tempo di cari- <lb break="no"/>
+                    carsi la maialina sulle spalle, le sballava di belle parole: <lb/>
+                    <q type="spoken">— <rs ref="#comare Santa">Sorella mia</rs>, che posso farvi? Questo è l’ordine del <persName><roleName>sin- <lb break="no"/>
+                    daco</roleName></persName>. Maiali per le strade non ne vuole più. Se vi lascio la <lb/>
+                    porcellina perdo il pane.</q> <lb/>
+                </p>
+
+                <p>
+                    La <persName type="fictional" key="comare Santa"><addName>zia</addName> <forename>Santa<forename></persName> gli correva dietro come una pazza, colle <lb/>
+                    mani nei capelli, strillando sempre: <q type="spoken"> — Ah! <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>! non lo <lb/>
+                    sapete che mi è costata <measure unit="tari" quantity="11">11 tari</measure> a <placeName><district>San Giovanni</district></placeName>, e la tengo <lb/>
+                    come la pupilla degli occhi miei! Lasciatemi la maialina, <lb/>
+                    <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>, per l’anima dei vostri morti! Che all’anno nuovo, <lb/>
+                    coll’aiuto di Dio, vale <measure unit="onze" quantity="2">due onze</measure>!</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>, zitto, a capo chino, col cuore più duro di un <lb/>
+                    sasso, badava solo dove metteva i piedi, per non isdruccio- <lb break="no"/>
+                    lare nella mota, colla maialina di traverso sulle spalle, che <lb/>
+                    grugniva rivolta al cielo. Allora la <persName type="fictional" key="comare Santa"><addName>zia</addName> <forename>Santa<forename></persName>, disperata, per <lb/>
+                    salvare la porcellina, gli assestò un solenne calcio nella <lb/>
+                    schiena, e lo fece andare ruzzoloni. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Le <persName><addName>comari</addName></persName>, appena videro l’<persName ref="#zio Masi"><roleName>acchiappaporci</roleName></persName> in mezzo al <lb/>
+                    fango, gli furono addosso colle rocche e colle ciabatte, e <lb/>
+                    volevano fargli la festa per tutti i porci e le galline che <lb/>
+                    aveva sulla coscienza. Ma in questa accorse <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName>, <lb/>
+                    colla tracolla dello sciabolotto attraverso la pancia, gridando <lb/>
+                    da lontano come un ossesso, fuori tiro delle rocche :<q type="spoken">— largo <lb/>
+                    alla <rs type="allegory">Giustizia!</rs> largo alla <rs type="allegory">Giustizia!</rs></q><lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>La <rs type="allegory">Giustizia</rs> condannò <persName type="fictional" key="comare Santa"><addName>comare</addName> <forename>Santa<forename></persName> alla multa ed alle <lb/>
+                    spese, e per ischivare la prigione dovettero anche ricorrere  <lb/>
+                    alla protezione del <persName><roleName>barone</roleName></persName>, il quale aveva la finestra di cu- <lb break="no"/>
+                    cina lì di faccia nella stradicciuola; e la salvò per miracolo, <lb/>
+                    facendo vedere alla <rs type="allegory">Giustizia</rs> che non era il caso di ribel- <lb break="no"/>
+                    lione, perchè l’<persName ref="#zio Masi"><roleName>acchiappaporci</roleName></persName> quel giorno non aveva il ber- <lb break="no"/>
+                    retto col gallone del <orgName>municipio</orgName>. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— Vedete!<q> esclamavano in coro le donne. <q type="spoken">— Ci vogliono <lb/>
+                    i santi per entrare in <rs type="religious">Paradiso</rs>! Questa del berretto nessuno <lb/>
+                    la sapeva!</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Però il <persName type="fictional"><roleName>barone</roleName></persName> aggiunse il predicozzo: quei porci e quelle <lb/>
+                    galline bisognava spazzarli via dal vicinato ; il <persName><roleName>sindaco</roleName></persName> aveva <lb/>
+                    ragione, che sembrava un porcile. D'allora in poi, ogni volta <lb/>
+                    che il servo del <persName><roleName>barone</roleName></persName> buttava la spazzatura sul capo alle <lb/>
+                    vicine, nessuna mormorava. Soltanto si dolevano che le gal-  <lb break="no"/>
+                    line chiuse in casa, per scansare la multa, non fossero più <lb/>
+                    buone chioccie; e i maiali, legati per un piede accanto al <lb/>
+                </p>
+
+                <pb n="2" facs="#DonLicciuPapa_pag2"/>
+                <cb n="2"/>
+
+                <p>
+                    letto, parevano tante anime del <rs type="religious">purgatorio</rs>. <q type="spoken">— Almeno <lb/>
+                    prima la spazzavan loro la stradicciuola.</q> <lb/>
+                </p>
+
+                <p>
+                   <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— Tutto quel concime sarebbe tant’oro perla chiusa dei <lb/>
+                    Grilli! </q>— sospirava <persName type="fictional"><addName>massaro</addName> <forename>Vito</forename></persName>. <q type="spoken">— Se avessi ancora la <lb/>
+                    mula baia, spazzerei la strada colle mie mani.</q>  <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Anche qui c’entrava <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName>. Egli era venuto <lb/>
+                    a pignorare la mula coll’usciere, che dall’usciere solo <persName type="fictional"><addName>mas- <lb break="no"/>
+                    saro</addName> <forename>Vito</forename></persName> non se la sarebbe lasciata portar via dalla stalla, <lb/>
+                    nemmen se l’ammazzavano, e gli avrebbe piuttosto man- <lb break="no"/>
+                    giato il naso come il pane. Lì, davanti al <persName><roleName>giudice</roleName></persName>, seduto al <lb/>
+                    tavolino, che pareva <persName type="historical">Ponzio Pilato</persName>, quando <persName type="fictional"><addName>massaro</addName> <forename>Vene- <lb break="no"/>
+                    rando</forename></persName> l’aveva citato per riscuotere il credito della mezzeria, <lb/>
+                    non seppe che rispondere. La <placeName>chiusa dei Grilli</placeName> era buona <lb/>
+                    soltanto per far grilli; il minchione era lui, se era tornato <lb/>
+                    dalla messe a mani vuote, e <persName type="fictional"><addName>massaro</addName> <forename>Venerando</forename></persName> aveva ra- <lb break="no"/>
+                    gione di voler esser pagato senza tante chiacchiere e tante <lb/>
+                    dilazioni, perciò aveva portato l’<persName><roleName>avvocato<roleName></persName>, che parlava per <lb/>
+                    lui. Ma com’ebbe finito di parlare, e <persName type="fictional"><addName>massaro</addName> <forename>Venerando</forename></persName> se ne <lb/>
+                    andava lieto, dondolandosi dentro gli stivaloni come un’ani- <lb break="no"/>
+                    tra ingrassata, non potè stare di domandare al <persName><roleName>cancelliere</roleName></persName> <lb/>
+                    se era vero che gli vendevano la mula. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— Silenzio!</q> interruppe il <persName><roleName>giudice</roleName></persName> che si soffiava il naso <lb/>
+                    prima di passare a un altro affare. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><persName type="fictional"><addName>Don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName> si svegliò di soprassalto sulla panchetta, <lb/>
+                    e gridò : <q type="spoken">— Silenzio ! </q><lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— Se venivate coll’<persName><roleName>avvocato</roleName></persName>, vi lascerebbero parlare an- <lb break="no"/>
+                    cora</q>, gli disse <persName type="fictional"><addName>compare</addName> <forename>Orazio<forename> per confortarlo. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Sulla <placeName>piazza<placeName>, dinanzi agli scalini del <orgName>municipio<orgName>, il <persName><roleName>bandi- <lb break="no"/>
+                    tore</roleName></persName> gli vendeva la mula <q>— <measure unit="onze" quantity="15">Quindici onze</measure> la mula di <persName><addName>com- <lb break="no"/>
+                    pare</addName> <forename>Vito</forename> <surname>Gnirri</surname></persName>! <measure unit="onze" quantity="15">Quindici onze</measure> una bella mula baia! <measure unit="onze" quantity="15">Quin- <lb break="no"/>
+                    dici onze!</measure></q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><persName type="fictional"><addName>Compare</addName> <forename>Vito</forename></persName>, seduto sugli scalini, col mento fra le mani, <lb/>
+                    non voleva dir nulla che la mula era vecchia, ed eran più <lb/>
+                    di 16 anni che gli lavorava. Essa stava lì contenta, come <lb/>
+                    una sposa, colla cavezza nuova. Ma appena gliela portaron <lb/>
+                    via davvero, ei perse la testa, pensando che quell’usuraio di <lb/>
+                    <persName type="fictional"><addName>massaro</addName> <forename>Venerando</forename></persName> gli acchiappava  <measure unit="onze" quantity="15">15 onze</measure> per una sola <lb/>
+                    annata di mezzeria, che tanto non ci valeva la <placeName>chiusa dei <lb/>
+                    Grilli</placeName>, e senza la mula ormai non poteva più lavorare la <lb/>
+                    <unclear reason="smudged">chiusa</unclear>, e all’anno nuovo si sarebbe trovato di nuovo col de-  <lb break="no"/>
+                    <unclear reason="smudged">bito sulle</unclear> spalle. Ei si mise a gridare come un disperato sul <lb/>
+                    <unclear reason="smudged">naso a</unclear> <persName type="fictional"><addName>massaro</addName> <forename>Venerando</forename></persName>. <q type="spoken">— Cosa mi farete pignorare, <lb/>
+                    quando non avrò più nulla? Anticristo che siete!</q> E voleva <lb/>
+                    levargli il battesimo dalla testa, se non fosse stato per <persName type="fictional"><addName>don</addName> <lb/>
+                    <forename>Licciu</forename> <surname>Papa</surname></persName> lì presente, collo sciabolotto e il berretto gal-  <lb break="no"/>
+                    lonato, il quale si mise a gridare tirandosi indietro : <q tupe="spoken">— Fermo <lb/>
+                    alla <rs type="allegory">Giustizia</rs>! Fermo alla <rs type="allegory">Giustizia</rs>!</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— Che <rs type="allegory">Giustizia<rs>!</q> strillava <persName type="fictional"><addName>compare</addName> <forename>Vito</forename></persName> tornando a casa <lb/>
+                    colla cavezza in mano. <q type="spoken">— La <rs type="allegory">Giustizia</rs> è fatta per quelli che <lb/>
+                    hanno da spendere.</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Quando <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> era stato in causa col <persName><roleName>Reve- <lb break="no"/>
+                    rendo</roleName></persName> per via della casuccia, che il <persName><roleName>Reverendo</roleName></persName> voleva com- <lb break="no"/>
+                    prargliela per forza, tutti gli dicevano. <q type="spoken">— Che siete matto <lb/>
+                    a pigliarvela col <persName><roleName>Reverendo</roleName></persName>? È la storia della brocca contro <lb/>
+                    il sasso! Il <persName><roleName>Reverendo</roleName></persName> coi suoi denari si affitta la meglio <lb/>
+                    lingua d’avvocato, e vi riduce povero e pazzo.</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Il <persName><roleName>Reverendo</roleName></persName>, dacché s’era fatto ricco, aveva ingrandito  <lb/>
+                    la casuccia paterna, di qua e di là, come fa il porcospino <lb/>
+                    che si gonfia per scacciare i vicini dalla tana. Ora aveva <lb/>
+                    slargata la finestra che dava sul tetto di <persName type="fictional"><addName>curatolo</addName> <forename>Arcan- <lb break="no"/>
+                    gelo</forename></persName>, e diceva che gli bisognava la casa di lui per fabbri- <lb break="no"/>
+                    carvi sopra la cucina e mutare la finestra in uscio. <q type="spoken">— Ve- <lb break="no"/>
+                    dete, <persName type="fictional"><addName>compare</addName> <forename>Arcangelo</forename></persName> mio, senza cucina non ci posso <lb/>
+                    stare! Bisogna'che siate ragionevole.</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName> non lo era punto, e si ostinava a <lb/>
+                    pretendere di voler morire nella casa dove era nato. Tanto, <lb/>
+                    non ci veniva che una volta al sabato; ma quei sassi lo co- <lb break="no"/>
+                </p>
+
+                <cb n="3"/>
+
+                <p>
+                    noscevano, e se pensava al paese, nei <placeName>pascoli del Carramone<placeName>, <lb/>
+                    non lo vedeva altrimenti che sotto forma di quell'usciolo <lb/>
+                    rattoppato, e di quella finestra senza vetri. <said>— Va bene, va <lb/>
+                    bene, —</said> rispondeva fra di sé il <persName><roleName>Reverendo</roleName></persName>. <said>— Teste di vil- <lb break="no"/>
+                    lani ! Bisogna farci entrare la ragione per forza.</said><lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>E dalla finestra del Reverendo piovevano sul tetto di <persName type="fictional"><addName>cu- <lb break="no"/>
+                    ratolo</addName> <forename>Arcangelo</forename></persName> cocci di stoviglie, sassi, acqua sporca, e <lb/>
+                    riducevano il cantuccio dov’era il letto peggio di un porcile, <lb/>
+                    rie <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> gridava, il <persName><roleName>Reverendo</roleName></persName> si metteva a <lb/>
+                    gridare sul tetto, più forte di lui. <q type="spoken">— Che non poteva più te- <lb break="no"/>
+                    nerci un vaso di basilico sul davanzale? Non era padrone <lb/>
+                    d’innaffiare i suoi fiori?</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><persName type="fictional"><addName>Curatolo</addName> <forename>Arcangelo</forename></persName> aveva la testa dura peggio dei suoi <lb/>
+                    montoni, e ricorse alla <rs type="allegory">Giustizia</rs>. Vennero il <persName><roleName>giudice</roleName></persName>, il <persName><roleName>can- <lb break="no"/>
+                    celliere</roleName></persName>, e <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName>, a vedere se il <persName><roleName>Reverendo</roleName></persName> era <lb/>
+                    padrone d’inaffiare i suoi fiori, che quel giorno non ci erano <lb/>
+                    pili alla finestra, e il <persName><roleName>Reverendo</roleName></persName> aveva il solo incomodo di <lb/>
+                    levarli ogni volta che doveva venin; la <rs type="allegory">Giustizia</rs>, e rimetterli <lb/>
+                    al loro posto appena voltava le spalle. Il <persName><roleName>giudice</roleName></persName> stesso non <lb/>
+                    poteva passare il tempo a far la guardia al tetto di <persName type="fictional"><addName>curatolo</addName> <lb/>
+                    <forename>Arcangelo</forename></persName>, o ad andare e venire dalla straduccia; ogni sua <lb/>
+                    visita costava cara.<lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Restava la quistione di sapere se la finestra del  <persName><roleName>Reve- <lb break="no"/>
+                    rendo </roleName></persName> doveva essere coll'inferriata o senza inferriata, e il <lb/>
+                    <persName><roleName>giudice</roleName></persName>, e il <persName><roleName>cancelliere</roleName></persName>, e tutti, guardavano cogli occhiali <lb/>
+                    sul naso, e pigliavano misure che pareva un tetto di barone, <lb/>
+                    quel tettuccio piatto e ammuffato. E il <persName><roleName>Reverendo</roleName></persName> tirò pure <lb/>
+                    fuori certi diritti vecchi per la finestra senza inferriata, e per <lb/>
+                    alcune tegole che sporgevano sul tetto, che non ci si capiva <lb/>
+                    più nulla, e il povero <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> guardava in aria <lb/>
+                    anche lui, per capacitarsi che colpa avesse il suo tetto. Ei <lb/>
+                    ci perse il sonno della notte e il riso della bocca; si dissan- <lb break="no"/>
+                    guava a spese, e doveva lasciare la mandra in custodia del <lb/>
+                    ragazzo per correre dietro al <persName><roleName>giudice</roleName></persName> e all’<persName><roleName>usciere</roleName></persName>. Per giunta <lb/>
+                    le pecore gli morivano come le mosche, ai primi freddi del- <lb break="no"/>
+                    l’inverno, che il <persName type="religious">Signore<persName> lo castigava perchè se la pigliava <lb/>
+                    colla <orgName type="religious">Chiesa<orgName>, dicevano.<lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— E voi pigliattivi la casa</q>, disse infine al <persName><roleName>Reverendo</roleName></persName>, che <lb/>
+                    dopo tante liti e tante spese non gliene avanzava il danaro <lb/>
+                    da comprarsi la corda per impiccarsi a un travicello. Voleva <lb/>
+                    mettersi in collo la sua bisaccia e andarsene colla sua fi- <lb break="no"/>
+                    gliola a stare colle pecore, che quella maledetta casa non <lb/>
+                    voleva vederla più, finché era al mondo. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Ma allora uscì in campo il <persName><roleName>barone</roleName></persName>, l’altro vicino, il quale <lb/>
+                    ci aveva anche lui delle finestre e delle tegole sul tetto di <lb/>
+                    <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName>, e giacché il <persName><roleName>Reverendo</roleName></persName> voleva fabbri- <lb break="no"/>
+                    carsi la cucina, egli aveva pure bisogno di allargare la di- <lb break="no"/>
+                    spensa, sicché il povero <persName><roleName>capraio</roleName></persName> non sapeva più di chi fosse <lb/>
+                    la sua casa. Ma il <persName><roleName>Reverendo</roleName></persName> trovò il modo di aggiustare la <lb/>
+                    lite col <persName><roleName>barone</roleName></persName>, dividendosi da buoni amici fra di loro la casa <lb/>
+                    di <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName>, e poiché costui ci aveva anche quo- <lb break="no"/>
+                    st’altra servitù, gli ridusse il prezzo di un buon quarto. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><persName type="fictional"><forename>Nina</forename><persName>, la figlia di <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName>, come dovevano la- <lb break="no"/>
+                    sciare la casa e andarsene via dal paese, non finiva di <lb/>
+                    piangere, quasi ci avesse avuto il cuore attaccato a quei muri <lb/>
+                    e a quei chiodi delle pareti. Suo padre, poveraccio, tentava <lb/>
+                    di consolarla come meglio poteva, dicendole che laggiù, <lb/>
+                    nelle <placeName><geogName>grotti del Carramone</geogName></placeName>, ci si stava da principi, senza vi- <lb break="no"/>
+                    cini e senza <persName><roleName>acchiappaporci</roleName></persName>. Ma le <persName><addName>comari</addName></persName>, che sapevano <lb/>
+                    tutta la storia, si strizzavano l’occhio fra di loro borbot- <lb break="no"/>
+                    tando: <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>— Al <placeName><geogName>Carramone</geogName></placeName> il <persName><addName>signorino</addName></persName> non potrà più andarla a <lb/>
+                    trovare, di sera, quando <persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName>, è colle sue pe- <lb break="no"/>
+                    core. Per questo la <persName type="fictional"><forename>Nina</forename><persName> piange come una fontana. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Come lo seppe <persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName> cominciò a bestem- <lb break="no"/>
+                    miare e a gridare: <q type="spoken">— Scellerata! adesso con chi vuoi che ti <lb/>
+                    mariti?</q> <lb/>
+                </p>
+
+                <pb n="3" facs="#DonLicciuPapa_pag3">
+                <cb n="4"/>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Ma la <persName type="fictional"><forename>Nina</forename><persName> non pensava a maritarsi. Voleva soltanto <lb/>
+                    continuare a stare dov’era il <persName><addName>signorino</addName></persName>, che lo vedeva tutti <lb/>
+                    i giorni alla finestra, appena si alzava, e gli faceva segno se  <lb/>
+                    poteva andare a trovarla la sera. In tal modo la <persName type="fictional"><forename>Nina</forename><persName> <lb/>
+                    c’era cascata, col veder tutti i giorni alla finestra il <persName><addName>signo- <lb break="no"/>
+                    rino</addName></persName>, che dapprincipio le rideva, e le mandava i baci e il <lb/>
+                    fumo della pipa, e le vicine schiattavano d’invidia. Poscia <lb/>
+                    a poco a poco era venuto l’amore, che adesso la ragazza non <lb/>
+                    ci vedeva più dagli occhi, e aveva detto chiaro e tondo a suo <lb/>
+                    padre :
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">— Voi andatevene dove volete, che io me ne sto qui dove <lb/>
+                    sono. —</q>E il <persName><addName>signorino</addName></persName> le aveva promesso che la campava lui. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><persName type="fictional"><addName>Curatolo</addName> <forename>Arcangelo</forename></persName> di quel pane non ne mangiava, e vo- <lb break="no"/>
+                    leva chiamare <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName> per condur via a forza la fi- <lb break="no"/>
+                    gliuola. <q type="spoken">— Almeno quando saremo via di qui, nessuno saprà <lb/>
+                    le nostre disgrazie</q>, — diceva. Ma il <persName><roleName>giudice</roleName></persName>gli rispose che <lb/>
+                    la <persName type="fictional"><forename>Nina</forename><persName> aveva già gli anni del giudizio, ed era maggiore e <lb/>
+                    padrona di fare quel che gli pareva e piaceva. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/><q type="spoken">Ahi è padrona? —</q> borbottava <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> — <lb/>
+                    <q type="spoken">Anch’io son padrone! —</q> E appena incontrò il <persName><addName>signorino</addName></persName>, che <lb/>
+                    gli fumava sul naso, gli spaccò la testa come una noce con <lb/>
+                    una legnata. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Dopo che l'erebbero legato ben bene, accorse <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <lb/>
+                    <surname>Papa</surname></persName>, gridando <q type="spoken">— Largo alla <rs type="allegory">Giustizia</rs>! largo alla <rs type="allegory">Giustizia</rs>!</q> <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Davanti alla <rs type="allegory">Giustizia</rs> gli diedero anche un <persName><roleName>avvocato</roleName></persName> per <lb/>
+                    difenderei. <q type="spoken">— Almeno stavolta la <rs type="allegory">Giustizia</rs> non mi costa <lb/>
+                    nulla</q>; diceva <persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName>. E fu meglio per lui. L’<persName><roleName>av- <lb break="no"/>
+                    vocato</roleName></persName> riuscì a provare come quattro e quattro fanno otto, <lb/>
+                    che <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> non l’aveva fatto apposta, di cercare <lb/>
+                    d’ammazzare il <persName><addName>signorino</addName></persName>, con un randello di pero selvatico, <lb/>
+                    ch’era del suo mestiere, e se ne serviva per darlo sulle corna <lb/>
+                    ai montoni quando non volevano intender la ragione.<lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="0,5cm" reason="initial"/>Così fu condannato soltanto a 5 anni, la <persName type="fictional"><forename>Nina</forename><persName> rimase col <lb/>
+                    <persName><addName>signorino</addName></persName>, il <persName><roleName>barone</roleName></persName> allargò la sua dispensa, e il <persName><roleName>Reverendo</roleName></persName> <lb/>
+                    fabbricò una bella casa nuova su quella vecchia di <persName type="fictional"><addName>curatolo</addName> <lb/>
+                    <forename>Arcangelo</forename></persName>, con un balcone e due finestre verdi. <lb/>
+                </p>
+
+                <p>
+                    <space dim="horizontal" extent="5cm" reason="initial"/><author><hi rend="smallcaps">G. VERGA</hi></author>   
+                <p>
+
+            </body>
+        </text>
+    </TEI>
+
+
+    <!--BIBL 1: Volume 3, Fascicolo 65 Giuseppe Regaldi L'Acqua - Polimetro --> 
+    <TEI>
+        <teiHeader>
+            <fileDesc> <!-- descrizione bibliografica del documento -->
+
+                <titleStmt>
+                    <title>L'Acqua</title>
+                    <title><subtitle>Polimetro</subtitle></title>
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>Università di Pisa</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title level="j"> La Rassegna Settimanale</title>
+                        <title><subtitle>di politica, scienze, lettere ed arti</subtitle></title>
+                        <author><persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName></author>
+                        <date when="1878">1878</date>
+                        <biblScope unit="volume">3</biblScope>
+                        <biblScope unit="issue">65</biblScope>
+                        <pubPlace>Torino</pubPlace>
+                        <publisher>Camilla e Bertolero</publisher>
+                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-65-volume-3-1879-semestre-1-trimestre-1/"></edition>
+                    </bibl>
+                </sourceDesc>
+
+            </fileDesc>
+
+        </teiHeader>
+
+        <facsimile>
+            <surface n="1" xml:id="L'Acqua_pag1">
+                <graphic url="img/bibl1_L'Acqua_pag1"/>
+            </surface>
+        </facsimile>
+
+        <text>
+
+            <body>
+                <pb n="1" facs="#L'Acqua_pag1"/>
+                <cb n="1"/>
+
+                <p>
+                <author><hi rend="smallcaps"><persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName></hi></author>. <title><hi rend="italic">L'Acqua</hi> - Polimetro</title>  — <pubPlace>Torino</pubPlace>, <publisher>Camilla <lb/>
+                e Bertolero </publisher>, <date>1878</date>.
+                </p>
+
+                <p>
+                    Dal <date>1833</date>, che diede la prima <orgName>Accademia</orgName> di poesia estem- <lb break="no"/> 
+                    poranea, fino ad oggi, <persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName> è rimasto fedele  <lb/>
+                    alla sua Musa e col plettro ad armacollo ha percorso  <lb/>
+                    mezzo mondo poetando sempre, a dispetto d’uomini e di  <lb/>
+                    tempi impoetici, e sforzando ad ascoltarlo anche la gente  <lb/>
+                    frettolosa e distratta, che parea aver tutt’altro da fare che  <lb/>
+                    fermarsi ad ascoltare un poeta. Da improvvisatore si mutò  <lb/>
+                    in autore di poesie meditate e di prose (metamorfosi non  <lb/>
+                    facile) tirandosi però sempre dietro tutte le salmerie del-  <lb break="no"/> 
+                    l’improvvisatore, frasi, versi, emistichii, imagini, movenze  <lb/>
+                    di stile, giaciture di ritmi, reminiscenze, intonazioni pre  <lb/>
+                    parate di lunga mano e che ad ogni nuova occasione vanno  <lb/>
+                    a casellarsi da sè al loro posto, combinandosi col resto,  <lb/>
+                    come se tutto fosse creazione istantanea, in un’ armonia  <lb/>
+                    totale, che piace, e non senza lampi di una inspirazione,  <lb/>
+                    che nel <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> ha resistito agli anni, alle diversità delle  <lb/>
+                    vicende, delle condizioni, degli uffici e persino dei climi e  <lb/>
+                    dei gradi di latitudine. Il tempo volge alla scienza poli  <lb/>
+                    tica? Ed il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> gli offre scienza, ma scienza in versi,  <lb/>
+                    perchè, anche piegando al gusto contemporaneo, il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName>  <lb/>
+                    è sempre il <hi rend="italic">vecchio bardo</hi>, che d’ogni cosa fa versi. Nel suo  <lb/>
+                    Polimetro l’<hi rend="italic">Acqua</hi>, diciamolo subito, ci sono versi bellis-  <lb break="no"/> 
+                    simi, belli, brutti, così così, di tutto un poco. Ma la cosa  <lb/>
+                    più originale, secondo noi, è la composizione del ditiram-  <lb break="no"/> 
+                    bico poemetto. Comincia dai miti. I miti dell’acqua? Non  <lb/>
+                    hanno resistito al tempo. Passiamo dunque alla scienza.  <lb/> 
+
+                </p>
+                <cb n="2"/>
+
+                <p>
+                    Ma il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> si stanca presto di interrogarla e si addor- <lb break="no"/> 
+                    menta sulle dotte carte. Che cosa può accadere ad un poeta   <lb/> 
+                    che dorme? Una visione, si sa. E sogna d’essere dinanzi   <lb/> 
+                    alla <placeName><geogName>cascata del Niagara</geogName></placeName>, il cui Spirito gli dirà le virtù   <lb/>  
+                    delle acque. Il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> si sveglia e sente una sua vicina di   <lb/> 
+                    casa, che suona il <hi rend="italic">Pianoforte</hi>. Costei è di quelle implacabili   <lb/> 
+                    musicanti, che non perdonano nè di giorno nè di notte.  <lb/> 
+                </p>
+
+                <lg>
+                    <space dim="horizontal"/><l>Lassa mai non parea, sì con diverso</l><space dim="horizontal"/>
+                    <space dim="horizontal"/><l>Metro agitava la convulsa mano,</l><space dim="horizontal"/>
+                    <space dim="horizontal"/><l>Tutti i ritmi esprimea dell’universo.</l><space dim="horizontal"/>
+                </lg>
+
+                <p>
+                    Figurarsi che flagello ! Flagello pei nostri nervi mala-  <lb break="no"/>
+                    ticci, non pel felice temperamento del <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName>, il quale <lb/>  
+                    pensa bene di aggiungere alle armonie della pianista un <lb/>  
+                    buon fiasco di vino e, a proposito d'<hi rend="italic">Acqua</hi>, racconta d’aver <lb/>  
+                    preso una cotta, per cui nella stanza tutto gli balla la fur-  <lb break="no"/>
+                    lana, tavole, libri, seggiole, cortine, finché il poeta in pern-  <lb break="no"/>
+                    ecche ridorme e risogna. Sogna il migliore dei sogni, <lb/>  
+                    una bella ragazza, che lo consiglia di cantar l'<hi rend="italic">acqua</hi> del <lb/> 
+                    mare?  poeta dà una ripassata alla geografia, poi canta <lb/>  
+                    dei grandi navigatori. <q type="spoken">« E perchè non cantare i pittori del <lb/> 
+                    mare ? »</q> gli domanda uno scultore. <q type="spoken">« Di questi ho fatto <lb/>  
+                    una poesia fin dal <date when="1842">1842</date> »</q> risponde il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName>. E la ricanta. <lb/> 
+                    Dai pittori alle donne del mare. E sfilano <persName type="mythological">Venere</persName>, <persName type="mythological">Pene-  <lb break="no"/>
+                    lope</persName>, <persName type="historical">Saffo</persName> e qualche altra. Ma l’acqua non sempre giova. <lb/> 
+                    Se è troppa, inonda; se manca, è siccità. A proposito di <lb/> 
+                    che naturalmente si parla di <hi rend="italic">nuvole</hi>. E a proposito di nu-  <lb break="no"/>
+                    vole e di annuvolati ? L’associazione d’idee, che viene più <lb/> 
+                    ovvia, è quella della Camera dei Deputati. Oh Dio! che <lb/> 
+                    nuvoloni! Come se ne consolerà il poeta dell’ <hi rend="italic">Acqua?</hi> <lb/> 
+                </p>
+
+                <lg>
+                    <space dim="horizontal"/><l>. Qua, qua la cetra e <hi rend="italic">l'anfora del <placeName><region>Chianti</region></placeName>.</h></l><space dim="horizontal"/>
+                    <space dim="horizontal"/><l>Bevendo, agli estri giovanili io torno</l><space dim="horizontal"/>
+                    <space dim="horizontal"/><l>Ed all’itale nubi innalzo i canti.</l><space dim="horizontal"/>
+                </lg>
+
+                <p>
+                    Se tutti gli elettori potessero consolarsi così! Rimane <lb/> 
+                    l'<hi rend="italic">acqua santa</hi> ed il poeta racconta la festa della <hi rend="italic">Colombina</hi>, <lb/> 
+                    che si celebra a <placeName><settlement type="town">Firenze</settlement></placeName> il sabato santo. Dalla fiaccona del-  <lb break="no"/>
+                    l’estate, non potendo andare ai bagni si ristora al solito colla <lb/> 
+                    <hi rend="italic">delfica giocondità dei nappi di Lieo</hi> e celebra di lontano le <lb/>  
+                    <hi rend="italic">Terme</hi>. Nell’<date when="1878-08">agosto del <abbr>78</abbr><expan>1878</expan></date> gli riesce però di farsi strascinare <lb/>  
+                    fino alle sorgenti del <placeName><geogName>Tevere</geogName></placeName> e là, dopo aver pranzato bene <lb/>  
+                    come un pievano, si riaddormenta e sogna di <placeName><settlement type="town">Roma</settlement></placeName> e della <lb/> 
+                    pace fatta fra <orgName>Stato</orgName> e <orgName>Chiesa</orgName>. Ed ora che i nostri lettori <lb/> 
+                    sanno quanti argomenti si possano infilare uno dietro l’altro, <lb/> 
+                    cantando l’<hi rend="italic">acqua</hi> e bevendo vino, loderemo per fine nel buon <lb/> 
+                    <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> quella perenne giovinezza di spirito veramente <lb/> 
+                    anacreontica, che ferve nella sua poesia, quella fantasia <lb/> 
+                    ricca, abbondante, innamorata sempre di tutto ciò che è <lb/> 
+                    buono, dalle più alte verità morali, dai paesaggi pittoreschi <lb/> 
+                    fino alle belle donne ed al vino generoso; quell’ armonia <lb/> 
+                    musicale, che risuona sempre ne’ suoi versi, i quali non <lb/> 
+                    sono d’alcuna scuola, perchè le ricordano tutte, ma rivelano <lb/> 
+                    almeno un temperamento sano, felice, vigoroso, che ha tra-  <lb break="no"/>
+                    versato una lunga vita senza fiaccarsi, senza contaminare <lb/> 
+                    nè l’arte nè sè, senza perdere nè l’estro, nè il coraggio, <lb/> 
+                    nè la fede, nè il buon umore, senza smettere mai la fedeltà <lb/> 
+                    agli amici e la tolleranza benevola agli avversari. Questo <lb/> 
+                    poeta dell’<hi rend="italic">Acqua</hi> non ha cantato le <hi rend="italic">acque marziali</hi>, perchè <lb/> 
+                    non ne ebbe bisogno mai. È vecchio ed ha il fegato sano. <lb/> 
+                    Esempio memorabile ai tanti adolescenti fegatosi, che, ap-  <lb break="no"/>
+                    pena nati, contristano sè e gli altri con le loro rabhiuzze, <lb/> 
+                    che vogliono parere magnanimi disdegni e sono per lo più <lb/> 
+                    itterizie impotenti. <lb/> 
+                </placeName>
+
+            </body>
+        </text>
+    </TEI>
+
+
+
+    <!--BIBL 2: Volume 3, Fascicolo 65 Th. Ribot. La Psycologie Allemande Contemporaine (école expérimentale) --> 
+    <TEI>
+        <teiHeader>
+
+            <fileDesc> <!-- descrizione bibliografica del documento -->
+
+                <titleStmt>
+                    <title>La Psycologie Allemande Contemporaine</title>
+                    <title><subtitle>(école expérimentale)</subtitle></title>
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>Università di Pisa</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title level="j"> La Rassegna Settimanale</title>
+                        <title><subtitle>di politica, scienze, lettere ed arti</subtitle></title>
+                        <author><persName><forename><abbr>Th.<abbr></forename><surname>Ribot</surname></persName></author>
+                        <date when="1879">1879</date>
+                        <biblScope unit="volume">3</biblScope>
+                        <biblScope unit="issue">65</biblScope>
+                        <pubPlace>Parigi</pubPlace>
+                        <publisher>G. Baillière</publisher>
+                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-65-volume-3-1879-semestre-1-trimestre-1/"></edition>
+                    </bibl>
+                </sourceDesc>
+
+            </fileDesc>
+
+        </teiHeader>
+
+        <facsimile>
+            <surface n="1" xml:id="LaPsycologieAllemandeContemporaine_pag1">
+                <graphic url="img/bibl2_LaPsycologieAllemandeContemporaine_pag1"/>
+            </surface>
+        </facsimile>
+
+        <text>
+            <body>
+                <pb n="1" facs="#LaPsycologieAllemandeContemporaine_pag1">
+                <p>
+                <title><hi rend="smallcaps">Scienze filosofiche.</hi></title>
+                <autor><hi rend="smallcaps"><persName><forename><abbr>Th.</abbr><expan>Théodule</expan><forename> <surname>Ribot.</surname></persName></hi></autor> <title><hi rend="italic">La Psycologie Allemande Contemporaine</hi> (école <lb/>
+                expérimentale).<title> — <pubPlace>Paris</pubPlace> <publisher><persName><forename><abbr>G.</abbr></forename> <surname>Baillière</surname></persName></publisher>, <date>1879</date>. <lb/>
+                </p>
+
+                <p>
+                Dedicarsi per vari anni allo studio dei psicologi tede- <lb break="no"/> 
+                schi, senza smarrire la diritta via nella selva oscura; riu- <lb break="no"/> 
+                nire in un ordine genetico, evolutivo, tutti gli autori che <lb/> 
+                da <persName key="Johann Friedrich Herbart"><surnName>Herbart</surnName></persName> a <persName key="Wilhelm Wundt"><surname>Wundt</surname></persName> hanno contribuito allo svolgimento <lb/> 
+                della psicologia scientifica in <placeName><country>Germania</country></placeName> ; digerire tutto <lb/> 
+                quanto le loro opere contengono di indigesto, e presentare <lb/> 
+                al lettore una esposizione lucidissima dei loro metodi, delle S <lb/> 
+                loro ricerche e dei risultati ottenuti, — ecco il lavoro com— <lb break="no"/> 
+                piuto dal signor <persName><surname>Ribot</persName></surname>. <lb/> 
+                </p>
+
+                <p>
+                Pochi libri sono destinati ad avere una utilità così <lb/> 
+                immediata e così estesa come questo, e noi lo raccoman- <lb break="no"/> 
+                diamo caldamente ai nostri lettori. 
+                </p>
+                
+            </body>
+        </text>
+    </TEI>
+
+    <!--NOTIZIE: Volume 9, Fascicolo 211 - tutte le notizie presenti-->
+
+    <TEI>
+        <teiHeader>
+
+            <fileDesc> <!-- descrizione bibliografica del documento -->
+
+                <titleStmt>
+                    <title>Notizie</title>
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>Università di Pisa</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title level="j"> La Rassegna Settimanale</title>
+                        <title><subtitle>di politica, scienze, lettere ed arti</subtitle></title>
+                        <author><persName><forename>Sidney</forename><surname>Sonnino</surname><roleName>Direttore proprietario</roleName></persName></author>
+                        <author><persName><forename>Pietro</forename><surname>Pampaloni</surname><roleName>Gerente responsabile</roleName></persName></author>
+                        <date when="1882">1882</date>
+                        <biblScope unit="volume">9</biblScope>
+                        <biblScope unit="issue">211</biblScope>
+                        <pubPlace>Roma</pubPlace>
+                        <publisher>Tipografia Forzani o C.</publisher>
+                        <edition source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-211-volume-9-1882-semestre-1-trimestre-1/"></edition>
+                    </bibl>
+                </sourceDesc>
+
+            </fileDesc>
+
+        </teiHeader>
+
+        <facsimile>
+            <surface n="1" xml:id="notizie_pag1">
+                <graphic url="img/notizie_pag1"/>
+            </surface>
+        </facsimile>
+
+        <text>
+            <pb n="1" facs="#notizie_pag1">
+            <front> <!--frontespizio testo composito-->
+                <title><hi rend="smallcaps">NOTIZIE</hi><title>
+            </front>
+
+            <group>
+                <text> <!-- prima notizia -->
+                    <p>
+                        <space dim="horizontal" extent="0,5cm" reason="initial"/><orgName type="publisher" key="Loescher">L’editore Loescher</orgName> annunzia la prossima pubblicazione della versione <lb/>
+                        italiana dell'opera di Ferdinando Gregorovius, intitolata <title><hi rend="italic">Menaide storia <lb/>
+                        di una imperatrice Bizantina</hi></title>.<lb/>
+                    </p>
+                </text>
+
+                <text> <!-- seconda notizia-->
+                    <p>
+                        <space dim="horizontal" extent="0,5cm" reason="initial"/>A <placeName><settlement type="town">Halle</settlement></placeName>, la libreria <orgName type="publisher">Max Nienmyer</orgName> sta per pubblicare sotto la dire- <lb break="no"/> 
+                        zione del <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Hermann</surname> <forename>Paul</forename>, <roleName>professore</roleName></persName> all' <orgName>Università di <placeName><settlement type="town">Friburg</settlement></placeName></orgName>, una  <lb/>
+                        collezione dei più importami monumenti della letteratura del medio evo. <lb/>
+                        col titolo <title level="s"><hi rend="italic">Mdeutsche Bibliothek</hi></title>. L'<orgName type="publisher">editore</orgName> ha il proposito di rendere ac- <lb break="no"/> 
+                        cessibili a tutti opere delle quali finora si fecero costosissime edizioni. I  <lb/>
+                        testi saranno riveduti; ogni volume avrà una breve prefazione sul valore <lb/>
+                        letterario dell’opera, sul testo e sul metodo critico eguito dall'editore <lb/>
+                    </p>
+                </text>
+
+                <text>
+                    <p>
+                        <space dim="horizontal" extent="0,5cm" reason="initial"/>Il <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname> Janitschek</surname>, <roleName>professore</roleName> all’<orgName>Università di <placeName><settlement type="town">Praga</settlement></placeName><orgName> pubblicherà fra <lb/>
+                        breve uu lavoro su <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
+                    </p>
+                </text>
+
+                <text>
+                    <p>
+                        <space dim="horizontal" extent="0,5cm" reason="initial"/>Da una comunicazione fatta ultimamente alla <orgName>Società inglese di ar- <lb break="no"/> 
+                        cheologia biblica</orgName> risulterebbe una fondata speranza di scoprire in <placeName><region>Cappa- <lb break="no"/> 
+                        docia</region></placeName> una biblioteca cuneiforme su tavolette di argilla, analoga a quelle <lb/> 
+                        che sono state trovate in <placeName><region>Assiria</region></placeName> e in <placeName><region>Babilonia</region></placeName>. Le tavolette già rinve- <lb break="no"/> 
+                        nute farebbero credere che la lingua adoperatavi fosse assai diversa dai <lb/>
+                        cuneiformi finora conosciuti. <lb/>
+                    </p>
+                </text>
+
+                <text>
+                    <p>
+                        <space dim="horizontal" extent="0,5cm" reason="initial"/>In <placeName><country>Francia</country></placeName> si discute il disegno di stabilire un servizio regolare di <lb/> 
+                        carovane fra la <placeName><country>Tunisia</country></placeName> e l’interno dell'<placeName><country>Africa</country></placeName>. La linea passerebbe per <lb/> 
+                        il <placeName><region>Bonin</region></placeName>, il <placeName><region>Wadai</region></placeName> e il <placeName><region>Darfur</region></placeName>.
+                    </p>
+                </text>
+    
+            </group>
+
+            <p>
+                <space dim="horizontal" extent="3cm"/><signed><persName><hi rend="smallcaps"><forename>SIDNEY</forename><surname>SONNINO</surname>, <roleName>Direttore proprietario</roleName></persName></signed> <space dim="horizontal" extent="3cm"/> <lb/>
+                <space dim="horizontal" extent="3cm"/><signed><persName><hi rend="smallcaps"><forename>PIETRO</forename><surname>PAMPALONI</surname>, <roleName>Gerente responsabile</roleName></persName></signed> <space dim="horizontal" extent="3cm"/> <lb/>
+                <pubPlace><placeName><settlement type="city"><hi rend="smallcaps">ROMA</hi></settlement></placeName></pubPlace>, <date when="1882">1882</date><orgName type="publisher">Tipografia Forzani o C.</orgName>
+            </p>
+
+        </text>
+
+    </TEI> 
+
+
+</teiCorpus>
