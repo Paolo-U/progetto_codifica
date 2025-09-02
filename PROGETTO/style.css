@@ -1,0 +1,23 @@
+.article {
+    display: flex;           /* due colonne affiancate */
+    gap: 20px;               /* spazio tra le colonne */
+    align-items: flex-start; /* allinea in alto le colonne */
+}
+
+.sx {
+    display: flex;
+    flex-direction: column;  /* immagini una sotto l’altra */
+    gap: 20px;               /* spazio tra le immagini */
+    flex: 1;                 /* occupa metà spazio disponibile */
+}
+
+.dx {
+    flex: 1;                 /* occupa l’altra metà */
+    border-left: 1px solid black; 
+    padding-left: 20px;
+}
+
+.immagini img {
+    width: 100%;             /* immagini responsive */
+    height: auto;
+}

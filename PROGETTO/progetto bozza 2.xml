@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
 
-<teiCorpus>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
 
     <teiHeader>
         <fileDesc> 
@@ -124,10 +124,10 @@
         
         <facsimile>
             <surface n="1" xml:id="CorrispondenzeDaParigi_pag1">
-                <graphic url="img/CorrispondenzeDaParigi_pag1"/>
+                <graphic url="img/CorrispondenzaDaParigi_pag1.jpg" width='601.4px' height='847.4px'/>    
             </surface>
             <surface n="2" xml:id="CorrispondenzeDaParigi_pag2">
-                <graphic url="img/CorrispondenzeDaParigi_pag2"/>
+                <graphic url="img/CorrispondenzaDaParigi_pag2.jpg" width='601.4px' height='847.4px'/>
             </surface>
         </facsimile>
 
@@ -407,10 +407,10 @@
 
         <facsimile>
             <surface n="1" xml:id="LettereMilitari_pag1">
-                <graphic url="img/LettereMilitari_pag1"/>
+                <graphic url="img/LettereMilitari_pag1.jpg" width='601.4px' height='847.4px'/>
             </surface>
             <surface n="2" xml:id="LettereMilitari_pag2">
-                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1"/>
+                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1.jpg" width='601.4px' height='847.4px'/>
             </surface>
         </facsimile>
 
@@ -791,13 +791,13 @@
 
         <facsimile>
             <surface n="1" xml:id="DonLicciuPapa_pag1">
-                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1"/>
+                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1.jpg" width='601.4px' height='847.4px'/>
             </surface>
             <surface n="2" xml:id="DonLicciuPapa_pag2">
-                <graphic url="img/DonLicciuPapa_pag2"/>
+                <graphic url="img/DonLicciuPapa_pag2.jpg" width='601.4px' height='847.4px'/>
             </surface>
             <surface n="3" xml:id="DonLicciuPapa_pag3">
-                <graphic url="img/DonLicciuPapa_pag3"/>
+                <graphic url="img/DonLicciuPapa_pag3.jpg" width='601.4px' height='847.4px'/>
             </surface>
         </facsimile>
 
@@ -1201,7 +1201,7 @@
 
         <facsimile>
             <surface n="1" xml:id="LAcqua_pag1">
-                <graphic url="img/bibl1_LAcqua_pag1"/>
+                <graphic url="img/bibl1_LAcqua_pag1.jpg" width='601.4px' height='847.4px'/>
             </surface>
         </facsimile>
 
@@ -1371,7 +1371,7 @@
 
         <facsimile>
             <surface n="1" xml:id="LaPsycologieAllemandeContemporaine_pag1">
-                <graphic url="img/bibl2_LaPsycologieAllemandeContemporaine_pag1"/>
+                <graphic url="img/bibl2_LaPsycologieAllemandeContemporaine_pag1.jpg" width='601.4px' height='847.4px'/>
             </surface>
         </facsimile>
 
@@ -1468,7 +1468,7 @@
 
         <facsimile>
             <surface n="1" xml:id="notizie_pag1">
-                <graphic url="img/notizie_pag1"/>
+                <graphic url="img/notizie_pag1.jpg" width='601.4px' height='847.4px'/>
             </surface>
         </facsimile>
 
