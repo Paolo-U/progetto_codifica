@@ -124,10 +124,14 @@
         
         <facsimile>
             <surface n="1" xml:id="CorrispondenzeDaParigi_pag1">
-                <graphic url="img/CorrispondenzaDaParigi_pag1.jpg" width='601.4px' height='847.4px'/>    
+                <graphic url="img/CorrispondenzaDaParigi_pag1.jpg"/>  
+                <zone xml:id="CorrispondenzaDaParigi_pag1_colonna1" ulx="75" uly="1041" lrx="583" lry="1568"/>
+                <zone xml:id="CorrispondenzaDaParigi_pag1_colonna2" ulx="601" uly="123" lrx="1105" lry="1561"/>
             </surface>
             <surface n="2" xml:id="CorrispondenzeDaParigi_pag2">
-                <graphic url="img/CorrispondenzaDaParigi_pag2.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/CorrispondenzaDaParigi_pag2.jpg"/>
+                <zone xml:id="CorrispondenzaDaParigi_pag2_colonna1" ulx="27" uly="123" lrx="541" lry="1567"/>
+                <zone xml:id="CorrispondenzaDaParigi_pag2_colonna2" ulx="540" uly="118" lrx="1047" lry="993"/>
             </surface>
         </facsimile>
 
@@ -136,10 +140,11 @@
                 <pb n="1" facs="#CorrispondenzaDaParigi_pag1"/>
                 <cb n="1"/>
 
-                    <p><title><hi rend="smallcaps">CORRISPONDENZA DA <placeName><settlement type="town">PARIGI</settlement></placeName></hi></title></p><lb/>
-                    <space dim="horizontal"/><p><date>24 marzo</date></p><lb/>
 
-                <p>
+                    <p><title><hi rend="smallcaps">CORRISPONDENZA DA <placeName><settlement type="town">PARIGI</settlement></placeName></hi></title></p><lb/>
+                    <space dim="horizontal" extent="0,5cm"/><p><date>24 marzo</date></p><lb/>
+
+                <p facs="#CorrispondenzaDaParigi_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/> <q type="proverb">« Non basta vincere, bisogna anche saper profittare della <lb/>
                     vittoria. »</q> Giammai la verità di questo adagio mi è sembrata <lb/>
                     più manifesta: la <orgName>repubblica</orgName> ha riportata una splendida vit- <lb break="no"/> 
@@ -160,15 +165,17 @@
                     verno, si volge poco a poco contro la repubblica. <lb/>
                 </p>
 
-                <p>
+                <p facs="#CorrispondenzaDaParigi_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Quelli stessi che applaudivano all’abortire del tentativo <lb/>
-                    reazionario del <date>16 maggio</date> e che lasciavano partire senza 
+                    reazionario del <date>16 maggio</date> e che lasciavano partire senza <lb/>
                     rimpiangerlo il <persName key="Patrice de Mac Mahon"><roleName>maresciallo</roleName> <surname>Mac Mahon</surname></persName>, cominciano a ripe- <lb break="no"/> 
                     tere con compiacenza quella trita sentenza : che la repub- <lb break="no"/> 
                 </p>
 
+
                 <cb n="2"/>
-                <p>
+                
+                <p facs="#CorrispondenzaDaParigi_pag1_colonna2">
                     blica è positivamente incompatibile col temperamento fran- <lb break="no"/> 
                     cese; altri, di umore più cupo, prevedono già il ristabilimento <lb/>
                     della <orgName>Comune</orgName>, seguito in breve da una restaurazione impe- <lb break="no"/> 
@@ -178,7 +185,7 @@
                     nuta che dal <orgName>partito repubblicano</orgName>, sarà molto malata ! <lb/>
                 </p>
 
-                <p>
+                <p facs="#CorrispondenzaDaParigi_pag1_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Ora chi devesi accusare di questo voltafaccia? L’inco- <lb break="no"/> 
                     stanza del temperamento francese e il suo gusto eccessivo <lb/>
                     per l’opposizione, o l’insufficenza delle persone a cui la <lb/>
@@ -240,11 +247,13 @@
                     la caduta del <persName key="Émile de Marcère"><roleName>ministro dell’ interno</roleName><surname>de Marcère</surname></persName> e del <persName><roleName>pre- <lb break="no"/> 
                     fetto di polizia</roleName> Albert Gigo t</persName> ; lo sconvolgimento del perso- <lb break="no"/> 
                 </p>
+                
 
                 <pb n="2" facs="#CorrispondenzaDaParigi_pag2"/>
                 <cb n="3"/>
 
-                <p>
+                
+                <p facs="#CorrispondenzaDaParigi_pag2_colonna1">
                     nale amministrativo e giudiziario; l’aggiornamento della <lb/>
                     conversione del 5 0[0, e soprattutto le circostanze che hanno <lb/>
                     accompagnato questo aggiornamento ; finalmente i tenta- <lb break="no"/>
@@ -255,7 +264,7 @@
                     dello stabilimento definitivo della repubblica in <placeName><country>Francia</country></placeName>. <lb/>
                 </p>
 
-                <p>
+                <p facs="#CorrispondenzaDaParigi_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>La <orgName>prefettura di polizia</orgName> è sotto molti aspetti un semen- <lb break="no"/>
                     zaio di abusi e di pratiche viziose. Checché ne dicano i no- <lb break="no"/>
                     stri giornali conservatori, si può fare la polizia senza dare <lb/>
@@ -288,7 +297,7 @@
                     di cedere poi alla ressa della sua famiglia e del suo seguito. <lb/>
                 </p>
 
-                <p>
+                <p facs="#CorrispondenzaDaParigi_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>L’aggiornamento della conversione del 5 0[0 è stato un <lb/>
                     incidente infinitamente più grave ancora, a cagione delle <lb/>
                     circostanze increscevoli che lo hanno accompagnato. Si può <lb/>
@@ -319,10 +328,11 @@
                     la seduta dichiarando, che nel momento appunto in cui la <lb/>
                     <orgName>Repubblica</orgName> era realmente istituita, la conversione gli sem- <lb break="no"/>
                 </p>
+                
 
                 <cb n="4"/>
 
-                <p>
+                <p facs="#CorrispondenzaDaParigi_pag2_colonna2">
                     brava politicamente inopportuna, che scontenterebbe gra- <lb break="no"/>
                     vemente la moltitudine dei piccoli possessori di Rendita; <lb/>
                     che fu così che l’imposta dei 45 centesimi prelevata dalla re- <lb break="no"/>
@@ -354,7 +364,7 @@
                     ‘ la peggiore di tutte le accuse. <lb/>
                 </p>
 
-                <p>
+                <p facs="#CorrispondenzaDaParigi_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Che dirò, dopo ciò, delle circolari del <persName key="Edmond Henri Turquet"><surname>Turquet</surname></persName>per moraliz- <lb break="no"/>
                     zare il teatro ? Che la censura impedisca la rappresentazione <lb/>
                     di spettacoli grossolanamente immorali o indecenti, sia pure! <lb/>
@@ -367,7 +377,7 @@
                     spirito ; bisogna credere che quel regno sia più facile a <lb/>
                     custodire che le <orgName>repubbliche della terra</orgName>.
                 </p>
-
+            
             </body>
         </text>
     </TEI>
@@ -407,10 +417,14 @@
 
         <facsimile>
             <surface n="1" xml:id="LettereMilitari_pag1">
-                <graphic url="img/LettereMilitari_pag1.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/LettereMilitari_pag1.jpg"/>
+                <zone xml:id="LettereMilitari_pag1_colonna1" ulx="103" uly="572" lrx="615" lry="1534"/>
+                <zone xml:id="LettereMilitari_pag1_colonna2" ulx="618" uly="96" lrx="1131" lry="1534"/>
             </surface>
             <surface n="2" xml:id="LettereMilitari_pag2">
-                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1.jpg"/>
+                <zone xml:id="LettereMilitari_pag2_colonna1"  ulx="58" uly="102" lrx="574" lry="1553"/>
+                <zone xml:id="LettereMilitari_pag2_colonna2"  ulx="583" uly="113" lrx="1093" lry="328"/>
             </surface>
         </facsimile>
 
@@ -418,11 +432,11 @@
             <body>
                 <pb n="1" facs="#LettereMilitari_pag1"/>
                 <cb n="1"/>
-
+               
                 <space dim="horizontal" extent="5cm"/><p><title><hi rend="smallcaps">LETTERE MILITARI</hi></title></p><space dim="horizontal" extent="5cm"/> <lb/>
                 <space dim="horizontal" extent="6cm"/><p><title type="sub"><hi rend="smallcaps">LE NECESSITà MILITARI</hi></title></p><space dim="horizontal" extent="6cm"/><lb/>
 
-                <p>
+                <p facs="#LettereMilitari_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/> Non fa d’uopo possedere acuta la vista degli occhi e <lb/>
                     dell’intelligenza per vedere come carica di elettricità sia <lb/>
                     in questo momento l’atmosfera politica di <placeName><region type="continent">Europa</region></placeName> e come <lb/>
@@ -434,7 +448,7 @@
                     mento. <lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Facciamolo oggi, che domani non saremmo forse più in <lb/>
                     tempo. Procuriamo di stringere le nostre alleanze prima <lb/>
                     che un potente vicino non venga a porci nelle strette del <lb/>
@@ -445,7 +459,7 @@
                     imminenti battaglie. <lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>È però presto detto: stringiamo le nostre alleanze! Nes- <lb break="no"/>
                     suno vorrà saperne, perchè quando ci domanderanno, come <lb/>
                     condizione fondamentale dell’alleanza, quante centinaia di <lb/>
@@ -471,15 +485,17 @@
                     stituiti in modo da portar la guerra in casa del nemico. <lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Quando nel <date when="1875">1875</date> il <persName><roleName>maresciallo</roleName> <surname>Moltke</surname></persName> esaminò da vicino <lb/>
                     le nostre condizioni politico-militari, la sentenza che emise<lb/>
                 </p>
+              
 
                 <pb n="2" facs="#LettereMilitari_pag2"/>
                 <cb n="2"/>
 
-                <p>
+                
+                <p facs="LettereMilitari_pag1_colonna2">
                     su di noi suonava presso a poco così: <q><quote>Il criterio dell’effi- <lb break="no"/>
                     cacia di un esercito, anche per la guerra difensiva sta nella<lb/>
                     sua capacità offensiva. L’<placeName><country>Italia</country></placeName> , per la lunghezza delle sue <lb/>
@@ -494,13 +510,13 @@
                     litari furono costantemente indirizzati a difesa.<lb/>
                 </p>
                 
-                <p>
+                <p facs="LettereMilitari_pag1_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Ci svegliamo un triste giorno soli, respinti da tutti, da <lb/>
                     tutti minacciati, e dobbiamo riconoscere che il nostro in- <lb break="no"/>
                     dirizzo militare è sbagliato. <lb/>
                 </p>
                 
-                <p>
+                <p facs="LettereMilitari_pag1_colonna2">
                     L’<persName><addName>onorevole</addName> <roleName>ministro della guerr</roleName></persName> ha recato dinanzi alla <lb/>
                     <orgName>Camera</orgName> un progetto di nuovo ordinamento dell’esercito, <lb/>
                     e sebbene sia stato dalla <title><hi rend="italic">Rassegna</hi></title> combattuto ne’suoi par- <lb break="no"/>
@@ -513,7 +529,7 @@
                     tari, e questo nemmeno non verrà osteggiato. <lb/>
                 </p>
 
-                <p>
+                <p facs="LettereMilitari_pag1_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Se non che entrambi i progetti sono ispirati, non di <lb/>
                     certo quanto gli altri che li hanno preceduti, al principio <lb/>
                     delle difensiva e soprattutto subiscono troppo l’influenza di <lb/>
@@ -523,7 +539,7 @@
                     situazione nostra presente. <lb/>
                 </p>
 
-                <p>
+                <p facs="LettereMilitari_pag1_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Ma è proprio vero che il nostro <orgName>esercito</orgName>, così ricco di <lb/>
                     personale combattente, non possa ricevere ancora una certa <lb/>
                     attitudine offensiva da rendere gradita e ricercata la no- <lb break="no"/>
@@ -542,7 +558,7 @@
                 </p>
 
                 
-                    <list> <!--lista provvedimenti-->
+                    <list facs="LettereMilitari_pag1_colonna2"> <!--lista provvedimenti-->
                         <item>
                         <space dim="horizontal" extent="0,5cm"/>Formate 20 nuove batterie da <measure unit="centimetri" quantity="9">cent. 9</measure> con 80 cavalli cia- <lb break="no"/>
                         scuna, e per far presto assegnatene due per ogni <orgName>reggi <lb break="no"/>
@@ -579,14 +595,23 @@
                         <item>
                             <space dim="horizontal" extent="0,5cm"/>non dimenticate di spingere con la maggiore alacrità<lb/>
                             <note xml:id="nota" n="*"><abbr>V.</abbr><hi rend="italic">Rassegna</hi>, <abbr>Vol.</abbr><expan>Volume</expan>, <abbr>pag.</abbr><expan>pagina</expan> 290 e 305</note>
+                        </item>
+                    </list>
+                        
                         <pb n="3"/>
                         <cb n="3"/>
+                        
+                    <list facs="#LettereMilitari_pag2_colonna1">
+                        <item>
                             possibile le costruzioni e gli apparecchi della <orgName>marina mi- <lb break="no"/>
                             litare</orgName>. <lb/>
                         </item>
                     </list>
+                        
+                   
+                    
                 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Compiuti questi preliminari provvedimenti, voi potrete 
                     offrire in un'alleanza il potente aiuto di sette corpi d’ar- <lb break="no"/>
                     mata, allestiti di tutto punto, e di cinque divisioni auto- <lb break="no"/>
@@ -597,11 +622,11 @@
                     zionale. <lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Ed ora veniamo alle cifre :<lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     <table>
                         <row role="head">
                             <cell>Descrizione</cell>
@@ -689,7 +714,7 @@
                     </table>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Senza punto sacrificare i propri progetti, chieda il <persName><roleName>ge- <lb break="no"/>
                     nerale</roleName> <surname>Ferrero</surname></persName> l’autorizzazione per la spesa immediata a <lb/>
                     cifre rotonde di <measure quantity="25 milioni">25 milioni</measure>, e vedrà che saranno unanimi <lb/>
@@ -698,13 +723,13 @@
                     finanziarie in cui si è chiuso il <date when="1881">1881</date> lo consentono.<lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>I provvedimenti da noi accennati sono tanto più ur- <lb break="no"/>
                     genti, inquanto che per grandissima parte concernono l’ac- <lb break="no"/>
                     quisto di cavalli, a cui dovremmo dare immediatamente opera <lb/>
                     all’interno ed all’estero per non trovare il nostro mercato <lb/>
                     sfruttato dagli stranieri, come si sa che hanno cominciato <lb/>
-                    a fare, per esempio, in <placeName><region>Sicilia</region></placeName> e nel <placeName><region>Napoletano</region></placeName> su vasta <lb/>
+                    a fare, per esempio, in <placeName><region type="administrative">Sicilia</region></placeName> e nel <placeName><region type="cultural">Napoletano</region></placeName> su vasta <lb/>
                     scala, e non vederci chiuso quello estero. A tale propo- <lb break="no"/>
                     sito è bene osservare che il <orgName>Ministero</orgName> potrà conseguire <lb/>
                     notevoli risparmi ove tenga bene aperti gli occhi e cambi <lb/>
@@ -718,7 +743,7 @@
                     reggimento.<lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Di pari passo ai provvedimenti da noi accennati do- <lb break="no"/>
                     vrebbero procedere la costruzione e l’armamento delle difese <lb/>
                     della frontiera terrestre, delle coste e della capitale, la fab- <lb break="no"/>
@@ -727,14 +752,14 @@
                     curo gli stabilimenti militari di <placeName><settlement type="town">Torino</settlement></placeName>.<lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna1">
                     Al <persName><roleName>generale</roleName> <surname>Ferrero</surname></persName> sarebbe forse facile armonizzare il <lb/>
                     progetto da noi imperfettamente abbozzato in questo scritto <lb/>
                 </p>
 
                 <cb n="4"/>
-
-                <p>
+             
+                <p facs="#LettereMilitari_pag2_colonna2">
                     con quelli da esso elaborati; in ogni modo, accetti o no le <lb/>
                     nostre idee, l’essenziale è che faccia e faccia presto, poiché <lb/>
                     egli da un momento all’altro si può trovare di fronte al <lb/>
@@ -742,14 +767,14 @@
                     dell’ordinamento militare nazionale. <lb/>
                 </p>
 
-                <p>
+                <p facs="#LettereMilitari_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Occorre sempre tener fisso dinanzi alla mente il con- <lb break="no"/>
                     cetto che, fintantoché il nostro ordinamento militare sarà ri- <lb break="no"/>
                     volto soltanto ad un’azione isolata, quale sarebbe quella <lb/>
                     intesa alla pura difesa del territorio, l’<placeName><country>Italia</country></placeName> si troverà <lb/>
                     sempre isolata anche politicamente. <lb/>
                 </p>
-
+    
             </body>
         </text>
 
@@ -791,13 +816,17 @@
 
         <facsimile>
             <surface n="1" xml:id="DonLicciuPapa_pag1">
-                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/LettereMilitari_pag2__DonLicciuPapa_pag1.jpg"/>
+                <zone xml:id="DonLicciuPapa_pag1_colonna1" ulx="589" uly="333" lrx="1107" lry="1547"/>
             </surface>
             <surface n="2" xml:id="DonLicciuPapa_pag2">
-                <graphic url="img/DonLicciuPapa_pag2.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/DonLicciuPapa_pag2.jpg"/>
+                <zone xml:id="DonLicciuPapa_pag2_colonna1" ulx="92" uly="121" lrx="615" lry="1577"/>
+                <zone xml:id="DonLicciuPapa_pag2_colonna2" ulx="617" uly="136" lrx="1132" lry="1588"/>
             </surface>
             <surface n="3" xml:id="DonLicciuPapa_pag3">
-                <graphic url="img/DonLicciuPapa_pag3.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/DonLicciuPapa_pag3.jpg"/>
+                <zone xml:id="DonLicciuPapa_pag3_colonna1" ulx="78" uly="112" lrx="579" lry="929"/>
             </surface>
         </facsimile>
 
@@ -805,10 +834,11 @@
             <body>
                 <pb n="1" facs="#DonLicciuPapa_pag1"/>
                 <cb n="1"/>
+                
 
-                <space dim="horizontal"/><head type="title"><hi rend="smallcaps"><persName type="fictional"><addName>DON</addName> <forename>LICCIU</forename> <surname>PAPA.</surname></persName></hi></head><space dim="horizontal"/><lb/>
+                <space dim="horizontal" extent="3cm"/><head type="title"><hi rend="smallcaps"><persName type="fictional"><addName>DON</addName> <forename>LICCIU</forename> <surname>PAPA.</surname></persName></hi></head><space dim="horizontal" extent="3cm"/><lb/>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Le comari filavano al sole, e le galline razzolavano nel <lb/>
                     pattume, davanti agli usci, allorché successe un gridio, un <lb/>
                     fuggi fuggi per tutta la stradicciuola, che si vide comparire <lb/>
@@ -817,7 +847,7 @@
                     scesse. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName> si buscava dal municipio <measure unit="centesimi" quantity="50">50 centesimi</measure> per <lb/>
                     le galline, e <measure unit="lire" quantity="3">3 lire</measure>per ogni maiale che sorprendeva in con- <lb break="no"/>
                     travvenzione. Egli preferiva i maiali. E come vide la por- <lb break="no"/>
@@ -828,7 +858,7 @@
                     Masi, non mi acchiappate la multa, che mi rovinate !</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>, il traditore, per pigliarsi il tempo di cari- <lb break="no"/>
                     carsi la maialina sulle spalle, le sballava di belle parole: <lb/>
                     <q type="spoken">— <rs ref="#comare Santa">Sorella mia</rs>, che posso farvi? Questo è l’ordine del <persName><roleName>sin- <lb break="no"/>
@@ -836,7 +866,7 @@
                     porcellina perdo il pane.</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     La <persName type="fictional" key="comare Santa"><addName>zia</addName> <forename>Santa</forename></persName> gli correva dietro come una pazza, colle <lb/>
                     mani nei capelli, strillando sempre: <q type="spoken"> — Ah! <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>! non lo <lb/>
                     sapete che mi è costata <measure unit="tari" quantity="11">11 tari</measure> a <placeName><district>San Giovanni</district></placeName>, e la tengo <lb/>
@@ -845,7 +875,7 @@
                     coll’aiuto di Dio, vale <measure unit="onze" quantity="2">due onze</measure>!</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Lo <persName type="fictional" key="zio Masi"><addName>zio</addName> <forename>Masi</forename></persName>, zitto, a capo chino, col cuore più duro di un <lb/>
                     sasso, badava solo dove metteva i piedi, per non isdruccio- <lb break="no"/>
                     lare nella mota, colla maialina di traverso sulle spalle, che <lb/>
@@ -854,7 +884,7 @@
                     schiena, e lo fece andare ruzzoloni. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Le <persName><addName>comari</addName></persName>, appena videro l’<persName ref="#zio Masi"><roleName>acchiappaporci</roleName></persName> in mezzo al <lb/>
                     fango, gli furono addosso colle rocche e colle ciabatte, e <lb/>
                     volevano fargli la festa per tutti i porci e le galline che <lb/>
@@ -864,7 +894,7 @@
                     alla <rs type="allegory">Giustizia!</rs> largo alla <rs type="allegory">Giustizia!</rs></q><lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>La <rs type="allegory">Giustizia</rs> condannò <persName type="fictional" key="comare Santa"><addName>comare</addName> <forename>Santa</forename></persName> alla multa ed alle <lb/>
                     spese, e per ischivare la prigione dovettero anche ricorrere  <lb/>
                     alla protezione del <persName><roleName>barone</roleName></persName>, il quale aveva la finestra di cu- <lb break="no"/>
@@ -874,13 +904,13 @@
                     retto col gallone del <orgName>municipio</orgName>. <lb/>
                 </p>
 
-                <p>
+                <p  facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">— Vedete!</q> esclamavano in coro le donne. <q type="spoken">— Ci vogliono <lb/>
                     i santi per entrare in <rs type="religious">Paradiso</rs>! Questa del berretto nessuno <lb/>
                     la sapeva!</q> <lb/>
                 </p>
 
-                <p>
+                <p  facs="#DonLicciuPapa_pag1_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Però il <persName type="fictional"><roleName>barone</roleName></persName> aggiunse il predicozzo: quei porci e quelle <lb/>
                     galline bisognava spazzarli via dal vicinato ; il <persName><roleName>sindaco</roleName></persName> aveva <lb/>
                     ragione, che sembrava un porcile. D'allora in poi, ogni volta <lb/>
@@ -889,22 +919,24 @@
                     line chiuse in casa, per scansare la multa, non fossero più <lb/>
                     buone chioccie; e i maiali, legati per un piede accanto al <lb/>
                 </p>
+               
 
                 <pb n="2" facs="#DonLicciuPapa_pag2"/>
                 <cb n="2"/>
-
-                <p>
+                
+           
+                <p facs="#DonLicciuPapa_pag2_colonna1"> 
                     letto, parevano tante anime del <rs type="religious">purgatorio</rs>. <q type="spoken">— Almeno <lb/>
                     prima la spazzavan loro la stradicciuola.</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                    <space dim="horizontal" extent="0,5cm"/><q type="spoken">— Tutto quel concime sarebbe tant’oro perla chiusa dei <lb/>
                     Grilli! </q>— sospirava <persName type="fictional"><addName>massaro</addName> <forename>Vito</forename></persName>. <q type="spoken">— Se avessi ancora la <lb/>
                     mula baia, spazzerei la strada colle mie mani.</q>  <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Anche qui c’entrava <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName>. Egli era venuto <lb/>
                     a pignorare la mula coll’usciere, che dall’usciere solo <persName type="fictional"><addName>mas- <lb break="no"/>
                     saro</addName> <forename>Vito</forename></persName> non se la sarebbe lasciata portar via dalla stalla, <lb/>
@@ -923,29 +955,29 @@
                     se era vero che gli vendevano la mula. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">— Silenzio!</q> interruppe il <persName><roleName>giudice</roleName></persName> che si soffiava il naso <lb/>
                     prima di passare a un altro affare. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><persName type="fictional"><addName>Don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName> si svegliò di soprassalto sulla panchetta, <lb/>
                     e gridò : <q type="spoken">— Silenzio ! </q><lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">— Se venivate coll’<persName><roleName>avvocato</roleName></persName>, vi lascerebbero parlare an- <lb break="no"/>
                     cora</q>, gli disse <persName type="fictional"><addName>compare</addName> <forename>Orazio</forename></persName> per confortarlo. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Sulla <placeName>piazza</placeName>, dinanzi agli scalini del <orgName>municipio</orgName>, il <persName><roleName>bandi- <lb break="no"/>
                     tore</roleName></persName> gli vendeva la mula <q>— <measure unit="onze" quantity="15">Quindici onze</measure> la mula di <persName><addName>com- <lb break="no"/>
                     pare</addName> <forename>Vito</forename> <surname>Gnirri</surname></persName>! <measure unit="onze" quantity="15">Quindici onze</measure> una bella mula baia! <measure unit="onze" quantity="15">Quin- <lb break="no"/>
                     dici onze!</measure></q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><persName type="fictional"><addName>Compare</addName> <forename>Vito</forename></persName>, seduto sugli scalini, col mento fra le mani, <lb/>
                     non voleva dir nulla che la mula era vecchia, ed eran più <lb/>
                     di 16 anni che gli lavorava. Essa stava lì contenta, come <lb/>
@@ -964,13 +996,13 @@
                     alla <rs type="allegory">Giustizia</rs>! Fermo alla <rs type="allegory">Giustizia</rs>!</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">— Che <rs type="allegory">Giustizia</rs>!</q> strillava <persName type="fictional"><addName>compare</addName> <forename>Vito</forename></persName> tornando a casa <lb/>
                     colla cavezza in mano. <q type="spoken">— La <rs type="allegory">Giustizia</rs> è fatta per quelli che <lb/>
                     hanno da spendere.</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Quando <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> era stato in causa col <persName><roleName>Reve- <lb break="no"/>
                     rendo</roleName></persName> per via della casuccia, che il <persName><roleName>Reverendo</roleName></persName> voleva com- <lb break="no"/>
                     prargliela per forza, tutti gli dicevano. <q type="spoken">— Che siete matto <lb/>
@@ -979,7 +1011,7 @@
                     lingua d’avvocato, e vi riduce povero e pazzo.</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Il <persName><roleName>Reverendo</roleName></persName>, dacché s’era fatto ricco, aveva ingrandito  <lb/>
                     la casuccia paterna, di qua e di là, come fa il porcospino <lb/>
                     che si gonfia per scacciare i vicini dalla tana. Ora aveva <lb/>
@@ -990,7 +1022,7 @@
                     stare! Bisogna'che siate ragionevole.</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName> non lo era punto, e si ostinava a <lb/>
                     pretendere di voler morire nella casa dove era nato. Tanto, <lb/>
                     non ci veniva che una volta al sabato; ma quei sassi lo co- <lb break="no"/>
@@ -998,7 +1030,8 @@
 
                 <cb n="3"/>
 
-                <p>
+
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     noscevano, e se pensava al paese, nei <placeName>pascoli del Carramone</placeName>, <lb/>
                     non lo vedeva altrimenti che sotto forma di quell'usciolo <lb/>
                     rattoppato, e di quella finestra senza vetri. <said>— Va bene, va <lb/>
@@ -1006,7 +1039,7 @@
                     lani ! Bisogna farci entrare la ragione per forza.</said><lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>E dalla finestra del Reverendo piovevano sul tetto di <persName type="fictional"><addName>cu- <lb break="no"/>
                     ratolo</addName> <forename>Arcangelo</forename></persName> cocci di stoviglie, sassi, acqua sporca, e <lb/>
                     riducevano il cantuccio dov’era il letto peggio di un porcile, <lb/>
@@ -1016,7 +1049,7 @@
                     d’innaffiare i suoi fiori?</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/><persName type="fictional"><addName>Curatolo</addName> <forename>Arcangelo</forename></persName> aveva la testa dura peggio dei suoi <lb/>
                     montoni, e ricorse alla <rs type="allegory">Giustizia</rs>. Vennero il <persName><roleName>giudice</roleName></persName>, il <persName><roleName>can- <lb break="no"/>
                     celliere</roleName></persName>, e <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName>, a vedere se il <persName><roleName>Reverendo</roleName></persName> era <lb/>
@@ -1029,7 +1062,7 @@
                     visita costava cara.<lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Restava la quistione di sapere se la finestra del  <persName><roleName>Reve- <lb break="no"/>
                     rendo </roleName></persName> doveva essere coll'inferriata o senza inferriata, e il <lb/>
                     <persName><roleName>giudice</roleName></persName>, e il <persName><roleName>cancelliere</roleName></persName>, e tutti, guardavano cogli occhiali <lb/>
@@ -1047,7 +1080,7 @@
                     colla <orgName type="religious">Chiesa</orgName>, dicevano.<lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">— E voi pigliattivi la casa</q>, disse infine al <persName><roleName>Reverendo</roleName></persName>, che <lb/>
                     dopo tante liti e tante spese non gliene avanzava il danaro <lb/>
                     da comprarsi la corda per impiccarsi a un travicello. Voleva <lb/>
@@ -1056,7 +1089,7 @@
                     voleva vederla più, finché era al mondo. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Ma allora uscì in campo il <persName><roleName>barone</roleName></persName>, l’altro vicino, il quale <lb/>
                     ci aveva anche lui delle finestre e delle tegole sul tetto di <lb/>
                     <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName>, e giacché il <persName><roleName>Reverendo</roleName></persName> voleva fabbri- <lb break="no"/>
@@ -1068,7 +1101,7 @@
                     st’altra servitù, gli ridusse il prezzo di un buon quarto. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/><persName type="fictional"><forename>Nina</forename></persName>, la figlia di <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName>, come dovevano la- <lb break="no"/>
                     sciare la casa e andarsene via dal paese, non finiva di <lb/>
                     piangere, quasi ci avesse avuto il cuore attaccato a quei muri <lb/>
@@ -1080,22 +1113,23 @@
                     tando: <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>— Al <placeName><geogName>Carramone</geogName></placeName> il <persName><addName>signorino</addName></persName> non potrà più andarla a <lb/>
                     trovare, di sera, quando <persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName>, è colle sue pe- <lb break="no"/>
                     core. Per questo la <persName type="fictional"><forename>Nina</forename></persName> piange come una fontana. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag2_colonna2">
                     <space dim="horizontal" extent="0,5cm"/>Come lo seppe <persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName> cominciò a bestem- <lb break="no"/>
                     miare e a gridare: <q type="spoken">— Scellerata! adesso con chi vuoi che ti <lb/>
                     mariti?</q> <lb/>
                 </p>
+               
 
                 <pb n="3" facs="#DonLicciuPapa_pag3"/>
                 <cb n="4"/>
-
-                <p>
+                
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Ma la <persName type="fictional"><forename>Nina</forename></persName> non pensava a maritarsi. Voleva soltanto <lb/>
                     continuare a stare dov’era il <persName><addName>signorino</addName></persName>, che lo vedeva tutti <lb/>
                     i giorni alla finestra, appena si alzava, e gli faceva segno se  <lb/>
@@ -1108,12 +1142,12 @@
                     padre :
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">— Voi andatevene dove volete, che io me ne sto qui dove <lb/>
                     sono. —</q>E il <persName><addName>signorino</addName></persName> le aveva promesso che la campava lui. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><persName type="fictional"><addName>Curatolo</addName> <forename>Arcangelo</forename></persName> di quel pane non ne mangiava, e vo- <lb break="no"/>
                     leva chiamare <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <surname>Papa</surname></persName> per condur via a forza la fi- <lb break="no"/>
                     gliuola. <q type="spoken">— Almeno quando saremo via di qui, nessuno saprà <lb/>
@@ -1122,19 +1156,19 @@
                     padrona di fare quel che gli pareva e piaceva. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/><q type="spoken">Ahi è padrona? —</q> borbottava <persName type="fictional"><addName>curatolo</addName> <forename>Arcangelo</forename></persName> — <lb/>
                     <q type="spoken">Anch’io son padrone! —</q> E appena incontrò il <persName><addName>signorino</addName></persName>, che <lb/>
                     gli fumava sul naso, gli spaccò la testa come una noce con <lb/>
                     una legnata. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Dopo che l'erebbero legato ben bene, accorse <persName type="fictional"><addName>don</addName> <forename>Licciu</forename> <lb/>
                     <surname>Papa</surname></persName>, gridando <q type="spoken">— Largo alla <rs type="allegory">Giustizia</rs>! largo alla <rs type="allegory">Giustizia</rs>!</q> <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Davanti alla <rs type="allegory">Giustizia</rs> gli diedero anche un <persName><roleName>avvocato</roleName></persName> per <lb/>
                     difenderei. <q type="spoken">— Almeno stavolta la <rs type="allegory">Giustizia</rs> non mi costa <lb/>
                     nulla</q>; diceva <persName type="fictional"><addName>Compare</addName> <forename>Arcangelo</forename></persName>. E fu meglio per lui. L’<persName><roleName>av- <lb break="no"/>
@@ -1145,18 +1179,18 @@
                     ai montoni quando non volevano intender la ragione.<lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="0,5cm"/>Così fu condannato soltanto a 5 anni, la <persName type="fictional"><forename>Nina</forename></persName> rimase col <lb/>
                     <persName><addName>signorino</addName></persName>, il <persName><roleName>barone</roleName></persName> allargò la sua dispensa, e il <persName><roleName>Reverendo</roleName></persName> <lb/>
                     fabbricò una bella casa nuova su quella vecchia di <persName type="fictional"><addName>curatolo</addName> <lb/>
                     <forename>Arcangelo</forename></persName>, con un balcone e due finestre verdi. <lb/>
                 </p>
 
-                <p>
+                <p facs="#DonLicciuPapa_pag3_colonna1">
                     <space dim="horizontal" extent="5cm"/>
                     <bibl><author><hi rend="smallcaps">G. VERGA</hi></author></bibl>   
                 </p>
-
+               
             </body>
         </text>
     </TEI>
@@ -1201,7 +1235,9 @@
 
         <facsimile>
             <surface n="1" xml:id="LAcqua_pag1">
-                <graphic url="img/bibl1_LAcqua_pag1.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/bibl1_LAcqua_pag1.jpg"/>
+                <zone xml:id="LAcqua_pag1_colonna1" ulx="51" uly="868" lrx="567" lry="1550"/>
+                <zone xml:id="LAcqua_pag1_colonna2" ulx="571" uly="141" lrx="1088" lry="1454"/>
             </surface>
         </facsimile>
 
@@ -1210,7 +1246,7 @@
             <body>
                 <pb n="1" facs="#LAcqua_pag1"/>
                 <cb n="1"/>
-
+            
                 <p>
                 <bibl>
                     <author><hi rend="smallcaps"><persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName></hi></author>. <title><hi rend="italic">L'Acqua</hi> - Polimetro</title>  — <pubPlace>Torino</pubPlace>, <publisher>Camilla <lb/>
@@ -1218,8 +1254,8 @@
                 </bibl>
                 </p>
 
-                <p>
-                    Dal <date>1833</date>, che diede la prima <orgName>Accademia</orgName> di poesia estem- <lb break="no"/> 
+                <p facs="#LAcqua_pag1_colonna1">
+                    <space dim="horizontal" extent="0,5cm"/>Dal <date>1833</date>, che diede la prima <orgName>Accademia</orgName> di poesia estem- <lb break="no"/> 
                     poranea, fino ad oggi, <persName><forename>Giuseppe</forename><surname>Regaldi</surname></persName> è rimasto fedele  <lb/>
                     alla sua Musa e col plettro ad armacollo ha percorso  <lb/>
                     mezzo mondo poetando sempre, a dispetto d’uomini e di  <lb/>
@@ -1245,12 +1281,12 @@
                     più originale, secondo noi, è la composizione del ditiram-  <lb break="no"/> 
                     bico poemetto. Comincia dai miti. I miti dell’acqua? Non  <lb/>
                     hanno resistito al tempo. Passiamo dunque alla scienza.  <lb/> 
-
                 </p>
+           
                 <cb n="2"/>
-
-                <p>
-                    Ma il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> si stanca presto di interrogarla e si addor- <lb break="no"/> 
+            
+                <p facs="#LAcqua_pag1_colonna2">
+                    <space dim="horizontal" extent="0,5cm"/>Ma il <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName> si stanca presto di interrogarla e si addor- <lb break="no"/> 
                     menta sulle dotte carte. Che cosa può accadere ad un poeta   <lb/> 
                     che dorme? Una visione, si sa. E sogna d’essere dinanzi   <lb/> 
                     alla <placeName><geogName>cascata del Niagara</geogName></placeName>, il cui Spirito gli dirà le virtù   <lb/>  
@@ -1259,14 +1295,14 @@
                     musicanti, che non perdonano nè di giorno nè di notte.  <lb/> 
                 </p>
 
-                <lg>
-                    <space dim="horizontal"/><l>Lassa mai non parea, sì con diverso</l><space dim="horizontal"/>
-                    <space dim="horizontal"/><l>Metro agitava la convulsa mano,</l><space dim="horizontal"/>
-                    <space dim="horizontal"/><l>Tutti i ritmi esprimea dell’universo.</l><space dim="horizontal"/>
+                <lg facs="#LAcqua_pag1_colonna2">
+                    <space dim="horizontal" extent="3cm"/><l>Lassa mai non parea, sì con diverso</l><space dim="horizontal" extent="3cm"/> <lb/> 
+                    <space dim="horizontal" extent="3cm"/><l>Metro agitava la convulsa mano,</l><space dim="horizontal" extent="3cm"/> <lb/> 
+                    <space dim="horizontal" extent="3cm"/><l>Tutti i ritmi esprimea dell’universo.</l><space dim="horizontal" extent="3cm"/> <lb/> 
                 </lg>
 
-                <p>
-                    Figurarsi che flagello ! Flagello pei nostri nervi mala-  <lb break="no"/>
+                <p facs="#LAcqua_pag1_colonna2">
+                    <space dim="horizontal" extent="0,5cm"/>Figurarsi che flagello ! Flagello pei nostri nervi mala-  <lb break="no"/>
                     ticci, non pel felice temperamento del <persName key="Giuseppe Regaldi"><surname>Regaldi</surname></persName>, il quale <lb/>  
                     pensa bene di aggiungere alle armonie della pianista un <lb/>  
                     buon fiasco di vino e, a proposito d'<hi rend="italic">Acqua</hi>, racconta d’aver <lb/>  
@@ -1287,19 +1323,19 @@
                     nuvoloni! Come se ne consolerà il poeta dell’ <hi rend="italic">Acqua?</hi> <lb/> 
                 </p>
 
-                <lg>
-                    <space dim="horizontal"/><l>. Qua, qua la cetra e <hi rend="italic">l'anfora del <placeName><region>Chianti</region></placeName>.</hi></l><space dim="horizontal"/>
-                    <space dim="horizontal"/><l>Bevendo, agli estri giovanili io torno</l><space dim="horizontal"/>
-                    <space dim="horizontal"/><l>Ed all’itale nubi innalzo i canti.</l><space dim="horizontal"/>
+                <lg facs="#LAcqua_pag1_colonna2">
+                    <space dim="horizontal" extent="3cm"/><l>. Qua, qua la cetra e <hi rend="italic">l'anfora del <placeName><region type="cultural">Chianti</region></placeName>.</hi></l><space dim="horizontal" extent="3cm"/> <lb/> 
+                    <space dim="horizontal" extent="3cm"/><l>Bevendo, agli estri giovanili io torno</l><space dim="horizontal" extent="3cm"/> <lb/> 
+                    <space dim="horizontal" extent="3cm"/><l>Ed all’itale nubi innalzo i canti.</l><space dim="horizontal" extent="3cm"/> <lb/> 
                 </lg>
 
-                <p>
-                    Se tutti gli elettori potessero consolarsi così! Rimane <lb/> 
+                <p facs="#LAcqua_pag1_colonna2">
+                    <space dim="horizontal" extent="0,5cm"/>Se tutti gli elettori potessero consolarsi così! Rimane <lb/> 
                     l'<hi rend="italic">acqua santa</hi> ed il poeta racconta la festa della <hi rend="italic">Colombina</hi>, <lb/> 
                     che si celebra a <placeName><settlement type="town">Firenze</settlement></placeName> il sabato santo. Dalla fiaccona del-  <lb break="no"/>
                     l’estate, non potendo andare ai bagni si ristora al solito colla <lb/> 
                     <hi rend="italic">delfica giocondità dei nappi di Lieo</hi> e celebra di lontano le <lb/>  
-                    <hi rend="italic">Terme</hi>. Nell’<date when="1878-08">agosto del <abbr>78</abbr><expan>1878</expan></date> gli riesce però di farsi strascinare <lb/>  
+                    <hi rend="italic">Terme</hi>. Nell’<date when="1878-08">agosto del <abbr>78</abbr> <expan>1878</expan></date> gli riesce però di farsi strascinare <lb/>  
                     fino alle sorgenti del <placeName><geogName>Tevere</geogName></placeName> e là, dopo aver pranzato bene <lb/>  
                     come un pievano, si riaddormenta e sogna di <placeName><settlement type="town">Roma</settlement></placeName> e della <lb/> 
                     pace fatta fra <orgName>Stato</orgName> e <orgName>Chiesa</orgName>. Ed ora che i nostri lettori <lb/> 
@@ -1324,7 +1360,7 @@
                     che vogliono parere magnanimi disdegni e sono per lo più <lb/> 
                     itterizie impotenti. <lb/> 
                 </p>
-
+            
             </body>
         </text>
     </TEI>
@@ -1371,14 +1407,15 @@
 
         <facsimile>
             <surface n="1" xml:id="LaPsycologieAllemandeContemporaine_pag1">
-                <graphic url="img/bibl2_LaPsycologieAllemandeContemporaine_pag1.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/bibl2_LaPsycologieAllemandeContemporaine_pag1.jpg"/>
+                <zone xml:id="LaPsycologieAllemandeContemporaine_pag1_colonna1" ulx="36" uly="577" lrx="558" lry="937"/>
             </surface>
         </facsimile>
 
         <text>
             <body>
                 <pb n="1" facs="#LaPsycologieAllemandeContemporaine_pag1"/>
-                
+            
                 <p>
                 <biblStruct>
                     <monogr>
@@ -1405,8 +1442,8 @@
 
                 </p>
 
-                <p>
-                Dedicarsi per vari anni allo studio dei psicologi tede- <lb break="no"/> 
+                <p facs="#LaPsycologieAllemandeContemporaine_pag1_colonna1">
+                <space dim="horizontal" extent="0,5cm"/>Dedicarsi per vari anni allo studio dei psicologi tede- <lb break="no"/> 
                 schi, senza smarrire la diritta via nella selva oscura; riu- <lb break="no"/> 
                 nire in un ordine genetico, evolutivo, tutti gli autori che <lb/> 
                 da <persName key="Johann Friedrich Herbart"><surname>Herbart</surname></persName> a <persName key="Wilhelm Wundt"><surname>Wundt</surname></persName> hanno contribuito allo svolgimento <lb/> 
@@ -1417,12 +1454,12 @@
                 piuto dal signor <persName><surname>Ribot</surname></persName>. <lb/> 
                 </p>
 
-                <p>
-                Pochi libri sono destinati ad avere una utilità così <lb/> 
+                <p facs="#LaPsycologieAllemandeContemporaine_pag1_colonna1">
+                <space dim="horizontal" extent="0,5cm"/>Pochi libri sono destinati ad avere una utilità così <lb/> 
                 immediata e così estesa come questo, e noi lo raccoman- <lb break="no"/> 
                 diamo caldamente ai nostri lettori. 
                 </p>
-                
+             
             </body>
         </text>
     </TEI>
@@ -1468,7 +1505,8 @@
 
         <facsimile>
             <surface n="1" xml:id="notizie_pag1">
-                <graphic url="img/notizie_pag1.jpg" width='601.4px' height='847.4px'/>
+                <graphic url="img/notizie_pag1.jpg"/>
+                <zone xml:id="notizie_pag1_colonna1" ulx="603" uly="1018" lrx="1123" lry="1540"/>
             </surface>
         </facsimile>
 
@@ -1477,78 +1515,79 @@
             <body>
                 <pb n="1" facs="#notizie_pag1"/>
 
-                <p>
-                    <title><hi rend="smallcaps">NOTIZIE</hi></title>
-                </p>
+                    <p>
+                        <title><hi rend="smallcaps">NOTIZIE</hi></title>
+                    </p>
 
-                <p>
-                    <space dim="horizontal" extent="0.5cm"/>
-                    <orgName type="publisher" key="Loescher">L’editore Loescher</orgName> annunzia la prossima pubblicazione della versione <lb/>
-                    italiana dell'opera di Ferdinando Gregorovius, intitolata 
-                    <title><hi rend="italic">Menaide storia <lb/> di una imperatrice Bizantina</hi></title>.<lb/>
-                </p>
+                    <p facs="#notizie_pag1_colonna1">
+                        <space dim="horizontal" extent="0.5cm"/>
+                        <orgName type="publisher" key="Loescher">L’editore Loescher</orgName> annunzia la prossima pubblicazione della versione <lb/>
+                        italiana dell'opera di Ferdinando Gregorovius, intitolata 
+                        <title><hi rend="italic">Menaide storia <lb/> di una imperatrice Bizantina</hi></title>.<lb/>
+                    </p>
 
-                <p>
-                    <space dim="horizontal" extent="0.5cm"/>
-                    A <placeName><settlement type="town">Halle</settlement></placeName>, la libreria 
-                    <orgName type="publisher">Max Nienmyer</orgName> sta per pubblicare sotto la dire-<lb break="no"/> 
-                    zione del <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Hermann</surname> 
-                    <forename>Paul</forename>, <roleName>professore</roleName></persName> all’ 
-                    <orgName>Università di <placeName><settlement type="town">Friburg</settlement></placeName></orgName>, una <lb/>
-                    collezione dei più importami monumenti della letteratura del medio evo. <lb/>
-                    col titolo <title level="s"><hi rend="italic">Mdeutsche Bibliothek</hi></title>. 
-                    L’<orgName type="publisher">editore</orgName> ha il proposito di rendere ac-<lb break="no"/> 
-                    cessibili a tutti opere delle quali finora si fecero costosissime edizioni. I <lb/>
-                    testi saranno riveduti; ogni volume avrà una breve prefazione sul valore <lb/>
-                    letterario dell’opera, sul testo e sul metodo critico eguito dall'editore. <lb/>
-                </p>
+                    <p facs="#notizie_pag1_colonna1">
+                        <space dim="horizontal" extent="0.5cm"/>
+                        A <placeName><settlement type="town">Halle</settlement></placeName>, la libreria 
+                        <orgName type="publisher">Max Nienmyer</orgName> sta per pubblicare sotto la dire-<lb break="no"/> 
+                        zione del <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Hermann</surname> 
+                        <forename>Paul</forename>, <roleName>professore</roleName></persName> all’ 
+                        <orgName>Università di <placeName><settlement type="town">Friburg</settlement></placeName></orgName>, una <lb/>
+                        collezione dei più importami monumenti della letteratura del medio evo. <lb/>
+                        col titolo <title level="s"><hi rend="italic">Mdeutsche Bibliothek</hi></title>. 
+                        L’<orgName type="publisher">editore</orgName> ha il proposito di rendere ac-<lb break="no"/> 
+                        cessibili a tutti opere delle quali finora si fecero costosissime edizioni. I <lb/>
+                        testi saranno riveduti; ogni volume avrà una breve prefazione sul valore <lb/>
+                        letterario dell’opera, sul testo e sul metodo critico eguito dall'editore. <lb/>
+                    </p>
 
-                <p>
-                    <space dim="horizontal" extent="0.5cm"/>
-                    Il <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Janitschek</surname></persName>, 
-                    <roleName>professore</roleName> all’<orgName>Università di 
-                    <placeName><settlement type="town">Praga</settlement></placeName></orgName> 
-                    pubblicherà fra breve un lavoro su 
-                    <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
-                </p>
+                    <p facs="#notizie_pag1_colonna1">
+                        <space dim="horizontal" extent="0.5cm"/>
+                        Il <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Janitschek</surname></persName>, 
+                        <roleName>professore</roleName> all’<orgName>Università di 
+                        <placeName><settlement type="town">Praga</settlement></placeName></orgName> 
+                        pubblicherà fra breve un lavoro su 
+                        <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
+                    </p>
 
-                <p>
-                    <space dim="horizontal" extent="0.5cm"/>
-                    Da una comunicazione fatta ultimamente alla 
-                    <orgName>Società inglese di ar-<lb break="no"/>cheologia biblica</orgName> 
-                    risulterebbe una fondata speranza di scoprire in 
-                    <placeName><region>Cappadocia</region></placeName> una biblioteca cuneiforme su tavolette di argilla, 
-                    analoga a quelle <lb/> che sono state trovate in 
-                    <placeName><region>Assiria</region></placeName> e in 
-                    <placeName><region>Babilonia</region></placeName>. 
-                    Le tavolette già rinve-<lb break="no"/>nute farebbero credere che la lingua adoperatavi fosse assai diversa dai <lb/>
-                    cuneiformi finora conosciuti. <lb/>
-                </p>
+                    <p facs="#notizie_pag1_colonna1">
+                        <space dim="horizontal" extent="0.5cm"/>
+                        Da una comunicazione fatta ultimamente alla 
+                        <orgName>Società inglese di ar-<lb break="no"/>cheologia biblica</orgName> 
+                        risulterebbe una fondata speranza di scoprire in 
+                        <placeName><region type="cultural">Cappa<lb break="no"/>
+                        docia</region></placeName> una biblioteca cuneiforme su tavolette di argilla, 
+                        analoga a quelle <lb/> che sono state trovate in 
+                        <placeName><region type="cultural">Assiria</region></placeName> e in 
+                        <placeName><region type="cultural">Babilonia</region></placeName>. 
+                        Le tavolette già rinve-<lb break="no"/>nute farebbero credere che la lingua adoperatavi fosse assai diversa dai <lb/>
+                        cuneiformi finora conosciuti. <lb/>
+                    </p>
 
-                <p>
-                    <space dim="horizontal" extent="0.5cm"/>
-                    In <placeName><country>Francia</country></placeName> si discute il disegno di stabilire un servizio regolare di <lb/>
-                    carovane fra la <placeName><country>Tunisia</country></placeName> e l’interno dell’<placeName><country>Africa</country></placeName>. 
-                    La linea passerebbe per <lb/>
-                    il <placeName><region>Bonin</region></placeName>, 
-                    il <placeName><region>Wadai</region></placeName> 
-                    e il <placeName><region>Darfur</region></placeName>.
-                </p>
+                    <p facs="#notizie_pag1_colonna1">
+                        <space dim="horizontal" extent="0.5cm"/>
+                        In <placeName><country>Francia</country></placeName> si discute il disegno di stabilire un servizio regolare di <lb/>
+                        carovane fra la <placeName><country>Tunisia</country></placeName> e l’interno dell’<placeName><country>Africa</country></placeName>. 
+                        La linea passerebbe per <lb/>
+                        il <placeName><region type="cultural">Bonin</region></placeName>, 
+                        il <placeName><region type="administrative">Wadai</region></placeName> 
+                        e il <placeName><region type="administrative">Darfur</region></placeName>.
+                    </p>
 
             </body>
-
+            
             <back>
                 <div type="signatures">
                     <signed>
                         <persName>
-                            <hi rend="smallcaps"><forename>SIDNEY</forename><surname>SONNINO</surname></hi>, 
-                            <roleName>Direttore proprietario</roleName>
+                            <hi rend="smallcaps"><forename>SIDNEY</forename><surname> SONNINO</surname></hi>, 
+                            <roleName>Direttore proprietario</roleName> <lb/>
                         </persName>
                     </signed>
                     <signed>
                         <persName>
-                            <hi rend="smallcaps"><forename>PIETRO</forename><surname>PAMPALONI</surname></hi>, 
-                            <roleName>Gerente responsabile</roleName>
+                            <hi rend="smallcaps"><forename>PIETRO</forename><surname> PAMPALONI</surname></hi>, 
+                            <roleName>Gerente responsabile</roleName> <lb/>
                         </persName>
                     </signed>
                 </div>
@@ -1559,10 +1598,10 @@
                             <imprint>
                                 <pubPlace>
                                     <placeName>
-                                        <settlement type="city"><hi rend="smallcaps">ROMA</hi></settlement>
+                                        <settlement type="town"><hi rend="smallcaps">ROMA </hi></settlement>
                                     </placeName>
                                 </pubPlace>
-                                <date when="1882">1882</date>
+                                <date when="1882">1882 </date>
                                 <publisher>
                                     <orgName type="publisher">Tipografia Forzani o C.</orgName>
                                 </publisher>
