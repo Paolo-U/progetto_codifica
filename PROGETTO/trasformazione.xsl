@@ -297,6 +297,7 @@
         </xsl:when>
 
         <!-- Caso 3: personaggio mitologico -->
+        
         <xsl:when test="@type = 'mythological'">
             <span class="entity persName" style="background-color:  #a39157;">
                 <xsl:choose>
