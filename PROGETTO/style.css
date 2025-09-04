@@ -99,7 +99,22 @@ p{
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    
 }
+
+.colonna {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+	border-bottom: solid 5px;
+	/* border-right: solid 1px; */
+	max-height: 920px;
+	overflow-y: auto;
+	/* padding-bottom: -31px; */
+	margin-bottom: 50px;
+}
+
 
 .sx {
 	display: flex;
@@ -112,14 +127,23 @@ p{
 }
 
 .dx {
+    font-size: 0.8em;
     flex: 1;
     border-left: 1px solid black;
     padding-left: 18px;
     margin-right: 1%;
-    overflow-y: auto;
+    overflow: hidden; /* evita fuoriuscite */
     margin-top: 5%;
     max-width: 100%;      /* Limita la larghezza al contenitore */
     box-sizing: border-box; /* Include padding e bordo nella larghezza */
+}
+.testo {
+    text-align: justify;
+    text-justify: inter-word;
+    /* max-height: 800px; */
+    overflow: auto; /* Aggiunge una barra di scorrimento se il contenuto supera l'altezza massima */
+    padding-right: 10px; /* Spazio per la barra di scorrimento */ 
+
 }
 
 #text-1{

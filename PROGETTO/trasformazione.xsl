@@ -91,23 +91,24 @@
               Fascicolo <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl/tei:biblScope[@unit='issue']"/>
             </p>
 
-            <!-- Immagini -->
+            <!-- testo -->
           <div class="columns">
+            
             <xsl:apply-templates select="tei:facsimile"/>
           
-          <div class="dx">
-            <!-- Testo -->
-              <div class="testo" id="text-{position()}">
-                <xsl:apply-templates select="tei:text/tei:body"/>
-                <xsl:apply-templates select="tei:text/tei:back"/>
-            
+            <div class="dx">
+                <!-- Testo suddiviso in colonne -->
+                <div class="testo colonne" id="text-{position()}">
+                  <xsl:apply-templates select="tei:text/tei:body"/>
+                  <xsl:apply-templates select="tei:text/tei:back"/>
+                </div>
               </div>
-            </div>
-          </div>
+           </div>
           </div>
           
           
         </xsl:for-each>
+        
         
         <!-- Pulsante Torna su -->
         <div id="legenda">
@@ -157,6 +158,18 @@
       <xsl:apply-templates/>
     </div>
   </xsl:template>
+
+  <!-- Gestione colonne: ogni <cb> apre una nuova colonna -->
+    <xsl:template match="tei:cb">
+      <xsl:text disable-output-escaping="yes"><![CDATA[</div><div class="colonna">]]></xsl:text>
+    </xsl:template>
+
+<!-- Avvia la prima colonna all'inizio del body 
+<xsl:template match="tei:body">
+  <div class="colonna">
+    <xsl:apply-templates/>
+  </div>
+</xsl:template> -->
 
   <!-- Gestione immagini -->
   <xsl:template match="tei:facsimile">
