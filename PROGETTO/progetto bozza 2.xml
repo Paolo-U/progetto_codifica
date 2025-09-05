@@ -389,7 +389,7 @@
 
                 <titleStmt>
                     <title>Lettere militari</title>
-                    <title type="sub">Le necessità militari</title>
+                    <title type="sub"> Le necessità militari</title>
                 </titleStmt>
 
                 <publicationStmt>
@@ -1544,10 +1544,8 @@
                     <p facs="#notizie_pag1_colonna1">
                         <space dim="horizontal" extent="0.5cm"/>
                         Il <persName><abbr type="title">sig.</abbr><expan>signor</expan> <surname>Janitschek</surname></persName>, 
-                        <roleName>professore</roleName> all’<orgName>Università di 
-                        <placeName><settlement type="town">Praga</settlement></placeName></orgName> 
-                        pubblicherà fra breve un lavoro su 
-                        <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
+                        <roleName>professore</roleName> all’<orgName>Università di <placeName><settlement type="town">Praga</settlement></placeName></orgName> pubblicherà fra <lb/>
+                        breve un lavoro su <persName><forename>Leon Battista</forename> <surname>Alberti</surname></persName>. <lb/>
                     </p>
 
                     <p facs="#notizie_pag1_colonna1">

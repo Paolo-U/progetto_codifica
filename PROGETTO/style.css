@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    
+    font-family: 'Roboto', Arial, sans-serif;   
+    background-image: url(img/sfondo.png); 
 }
 
 p{
@@ -11,12 +11,32 @@ p{
   display:inline-block;
 }
 
+.corpus-info {
+    text-align: center;
+}
+
+h1, .title, .fonte {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    font-size: 3.5em;
+}
+
+
+
+.resp ul {
+  list-style-type: none; 
+}
+
 .nav {
-    background: #f5faff;
-    border-bottom: 2px solid #0081f3;
-    box-shadow: 0 2px 8px rgba(0,129,243,0.07);
-    padding: 18px 0 8px 0;
-    margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0,129,243,0.07);
+  padding: 18px 0 8px 0;
+  margin: 0 auto 12em auto;  
+  border-bottom: 3px solid red;
+  display: block;            
+  width: fit-content;       
 }
 
 #menu ul {
@@ -26,6 +46,7 @@ p{
     list-style: none;
     padding: 0;
     margin: 0;
+    border-bottom: 5em;
 }
 
 #menu > ul > li {
@@ -38,7 +59,7 @@ p{
     transform: translateX(-50%);
     top: 110%;
     background: #fff;
-    border: 1px solid #0081f3;
+    border: 1px solid red;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,129,243,0.10);
     padding: 8px 0;
@@ -58,18 +79,22 @@ p{
 }
 
 #menu ul ul li:hover {
-    background: #e6f2ff;
+    background-color: rgba(255, 0, 0, 0.3);
     color: #0081f3;
 }
 
 #menu ul > li > a, #menu ul ul li {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.08em;
-    color: #0081f3;
+    color: red;
     text-decoration: none;
-    font-weight: 500;
     letter-spacing: 0.5px;
 }
+
+#menu ul > li > a {
+    font-weight: bold;
+}
+
 
 #menu ul > li {
     font-size: 1.12em;
@@ -80,25 +105,22 @@ p{
     transition: color 0.2s;
 }
 
-#menu ul > li:hover {
-    color: #005fa3;
-}
 
 .article {
 	gap: 20px;
 	align-items: flex-start;
 	max-width: 1400px;
-	/* margin: 0 auto; */
-	margin-bottom: 14%;
-	border-bottom: 1px solid #0081f3;
+	margin: 0 auto 20% auto;
+	border-bottom: 3px solid red;
 	padding-bottom: 25px;
-    margin-left: 1%;
 }
 
 .columns {
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    background-color: white;
+    margin: 0 auto 20% auto;
     
 }
 
@@ -173,7 +195,7 @@ p{
     position: fixed;
     bottom: 32px;
     right: 32px;
-    background: #0081f3;
+    background: red;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -194,9 +216,8 @@ p{
 #legenda {
 	position: fixed;
 	bottom: 30px;
-	/* right: 71px; */
-	border-radius: 21px;
-	border: solid 1px #0086fa;
+	border-radius: 15px;
+	border: solid 1px red;
 	padding-right: 33px;
 	background: white;
 	z-index: 101;
@@ -226,7 +247,7 @@ p{
 
 #legenda-label {
     cursor: pointer;
-    color: #0081f3;
+    color: red;
     font-weight: bold;
     font-size: 1.1em;
 }

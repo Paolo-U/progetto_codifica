@@ -28,22 +28,38 @@
         <!-- Informazioni sul corpus -->
         <div class="corpus-info">
           <h2><xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/></h2>
-          <p><b>Edizione:</b>
+          <p>
             <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:edition"/>
           </p>
-          <p><b>Pubblicazione:</b>
+          <p>
             <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:publisher"/>,
             <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:pubPlace"/>,
             <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date"/>
           </p>
 
+          <xsl:for-each select="//tei:titleStmt/tei:respStmt">
+            <div class="resp">
+              <p><strong><xsl:value-of select="tei:resp"/></strong></p>
+              <ul>
+                <xsl:for-each select="tei:persName">
+                  <li>
+                    <xsl:value-of select="tei:forename"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="tei:surname"/>
+                  </li>
+                </xsl:for-each>
+              </ul>
+            </div>
+          </xsl:for-each>
+
         </div>
+
         <div class="nav">
 
           <nav id="menu">
 
             <ul>
-             <li><a href="#">Articoli</a>
+             <li><a href="#">ARTICOLI</a>
               <ul id="ul-art">
                 <li><a href="#article-1">Corrispondenza da Parigi</a></li>
                 <li><a href="#article-2">Lettere militari</a></li>
@@ -51,17 +67,16 @@
               </ul>
              </li>  
             
-             <li><a href="#">Bibliografia</a>
+             <li><a href="#">BIBLIOGRAFIA</a>
               <ul id="ul-bibl">
                 <li><a href="#article-4">L'Acqua</a></li>
                 <li><a href="#article-5">La Psycologie Allemande Contemporaine</a></li>
               </ul>
              </li>  
              
-             <li><a href="#">Notizie</a>
+             <li><a href="#">NOTIZIE</a>
               <ul id="ul-not">
                 <li><a href="#article-6">Notizie</a></li>
-                <li>Notizie</li>
               </ul>
              </li> 
 
@@ -83,7 +98,7 @@
             </h2>
 
             <!-- Fonte -->
-            <p>
+            <p class="fonte">
               <b>Fonte:</b>
               <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl/tei:title"/>
               (<xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl/tei:date"/>),
